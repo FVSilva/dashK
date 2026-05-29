@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment / credentials — NEVER commit
+server/data.json
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# Claude memory (local only)
+.claude/
