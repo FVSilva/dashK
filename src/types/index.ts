@@ -4,6 +4,7 @@ export interface Client {
   subdomain: string;
   token: string;
   createdAt: string;
+  stageNames?: Record<string, string>;
 }
 
 export interface Lead {

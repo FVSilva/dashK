@@ -36,7 +36,7 @@ function CustomTooltip({ active, payload }: { active?: boolean; payload?: Array<
         {d.staleCount > 0 && (
           <div className="flex justify-between gap-6">
             <span className="text-xs text-text-muted">Parados 30d+</span>
-            <span className="text-xs font-semibold text-yellow-400">{d.staleCount}</span>
+            <span className="text-xs font-semibold text-amber-400">{d.staleCount}</span>
           </div>
         )}
         {d.criticalCount > 0 && (
@@ -52,6 +52,7 @@ function CustomTooltip({ active, payload }: { active?: boolean; payload?: Array<
 
 export function StageTimeChart({ stages }: Props) {
   const data = stages.filter(s => s.type === 0 && s.count > 0);
+  const alerts = data.filter(s => s.staleCount > 0 || s.criticalCount > 0);
 
   if (data.length === 0) {
     return (
@@ -63,6 +64,7 @@ export function StageTimeChart({ stages }: Props) {
 
   return (
     <div className="space-y-5">
+      {/* Bar chart */}
       <ResponsiveContainer width="100%" height={Math.max(data.length * 36, 160)}>
         <BarChart data={data} layout="vertical" margin={{ top: 0, right: 70, left: 0, bottom: 0 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="#1e1e1e" horizontal={false} />
@@ -102,7 +104,7 @@ export function StageTimeChart({ stages }: Props) {
         {[
           { color: '#22c55e', label: '< 14 dias — saudável' },
           { color: '#f59e0b', label: '14–29 dias — atenção' },
-          { color: '#f59e0b', label: '30–59 dias — lento' },
+          { color: '#f97316', label: '30–59 dias — lento' },
           { color: '#E5173F', label: '60+ dias — crítico' },
         ].map(({ color, label }) => (
           <div key={label} className="flex items-center gap-1.5">
@@ -111,6 +113,37 @@ export function StageTimeChart({ stages }: Props) {
           </div>
         ))}
       </div>
+
+      {/* Stage alerts — visible stale/critical counts per stage */}
+      {alerts.length > 0 && (
+        <div className="border-t border-border-default pt-4">
+          <p className="text-[10px] font-semibold text-text-muted uppercase tracking-wider mb-3">
+            Alertas por Etapa
+          </p>
+          <div className="space-y-2">
+            {alerts.map(s => (
+              <div key={s.id} className="flex items-center gap-2 flex-wrap">
+                <span
+                  className="text-xs text-text-secondary flex-shrink-0 truncate"
+                  style={{ minWidth: 120, maxWidth: 160 }}
+                >
+                  {s.name.length > 22 ? s.name.slice(0, 22) + '…' : s.name}
+                </span>
+                {s.staleCount > 0 && (
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-amber-950/40 text-amber-300 border border-amber-700/40 flex-shrink-0">
+                    {s.staleCount} parado{s.staleCount !== 1 ? 's' : ''} 30d+
+                  </span>
+                )}
+                {s.criticalCount > 0 && (
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-red-950/40 text-red-300 border border-red-700/40 flex-shrink-0">
+                    {s.criticalCount} crítico{s.criticalCount !== 1 ? 's' : ''} 60d+
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

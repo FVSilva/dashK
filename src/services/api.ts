@@ -1,32 +1,74 @@
+/**
+ * api.ts — client storage (localStorage) + Kommo data fetching (direct browser calls)
+ * No Express backend needed — works entirely in the browser for GitHub Pages.
+ */
+
 import type { Client, KommoData } from '../types';
+import { fetchKommoData } from './kommoApi';
 
-const BASE = '/api';
+const STORAGE_KEY = 'dashk_clients';
 
-async function request<T>(path: string, options?: RequestInit): Promise<T> {
-  const res = await fetch(`${BASE}${path}`, {
-    headers: { 'Content-Type': 'application/json' },
-    ...options,
-  });
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({ error: res.statusText }));
-    throw new Error(err.error || `HTTP ${res.status}`);
-  }
-  return res.json();
+// ── localStorage helpers ──────────────────────────────────────────────────────
+
+function readClients(): Client[] {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '[]') as Client[];
+  } catch { return []; }
 }
 
+function writeClients(clients: Client[]): void {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(clients));
+}
+
+// ── Clients CRUD ──────────────────────────────────────────────────────────────
+
 export const clientsApi = {
-  getAll: () => request<Client[]>('/clients'),
-  create: (data: Omit<Client, 'id' | 'createdAt'>) =>
-    request<Client>('/clients', { method: 'POST', body: JSON.stringify(data) }),
-  update: (id: string, data: Partial<Client>) =>
-    request<Client>(`/clients/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
-  delete: (id: string) =>
-    request<{ success: boolean }>(`/clients/${id}`, { method: 'DELETE' }),
-  saveStageNames: (id: string, stageNames: Record<string, string>) =>
-    request<{ success: boolean }>(`/clients/${id}/stage-names`, { method: 'PUT', body: JSON.stringify(stageNames) }),
+  getAll: (): Promise<Client[]> =>
+    Promise.resolve(readClients()),
+
+  create: (data: Omit<Client, 'id' | 'createdAt'>): Promise<Client> => {
+    const clients = readClients();
+    const client: Client = {
+      id: Date.now().toString(),
+      createdAt: new Date().toISOString(),
+      ...data,
+    };
+    clients.push(client);
+    writeClients(clients);
+    return Promise.resolve(client);
+  },
+
+  update: (id: string, data: Partial<Client>): Promise<Client> => {
+    const clients = readClients();
+    const idx = clients.findIndex(c => c.id === id);
+    if (idx === -1) return Promise.reject(new Error('Cliente não encontrado'));
+    clients[idx] = { ...clients[idx], ...data };
+    writeClients(clients);
+    return Promise.resolve(clients[idx]);
+  },
+
+  delete: (id: string): Promise<{ success: boolean }> => {
+    writeClients(readClients().filter(c => c.id !== id));
+    return Promise.resolve({ success: true });
+  },
+
+  saveStageNames: (id: string, stageNames: Record<string, string>): Promise<{ success: boolean }> => {
+    const clients = readClients();
+    const idx = clients.findIndex(c => c.id === id);
+    if (idx === -1) return Promise.reject(new Error('Cliente não encontrado'));
+    clients[idx] = { ...clients[idx], stageNames };
+    writeClients(clients);
+    return Promise.resolve({ success: true });
+  },
 };
 
+// ── Kommo data ────────────────────────────────────────────────────────────────
+
 export const kommoApi = {
-  fetchAll: (clientId: string) =>
-    request<KommoData>(`/kommo/${clientId}/all`),
+  fetchAll: (clientId: string): Promise<KommoData> => {
+    const clients = readClients();
+    const client  = clients.find(c => c.id === clientId);
+    if (!client) return Promise.reject(new Error('Cliente não encontrado'));
+    return fetchKommoData(client.subdomain, client.token, client.stageNames ?? {});
+  },
 };
