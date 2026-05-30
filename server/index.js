@@ -342,6 +342,86 @@ app.get('/api/kommo/:clientId/all', async (req, res) => {
   }
 });
 
+// ── Stateless sync endpoint (GitHub Pages / any frontend) ────────────────────
+// Accepts {subdomain, token, stageNames} in body — no server-side storage needed.
+// This allows the GitHub Pages frontend to proxy Kommo API calls through this
+// server, avoiding the CORS restriction on Kommo's API.
+
+app.post('/api/kommo/sync', async (req, res) => {
+  const { subdomain, token, stageNames: savedStageNames = {} } = req.body;
+  if (!subdomain || !token) {
+    return res.status(400).json({ error: 'subdomain e token são obrigatórios' });
+  }
+
+  try {
+    const [leads, users, rawPipelines, leadCustomFields, accountInfo, lossReasons] = await Promise.all([
+      fetchAllLeads(subdomain, token),
+      fetchAllUsers(subdomain, token),
+      fetchPipelinesWithNames(subdomain, token),
+      fetchCustomFields(subdomain, token, 'leads'),
+      fetchAccountInfo(subdomain, token),
+      fetchLossReasons(subdomain, token),
+    ]);
+
+    let pipelines = rawPipelines !== null ? rawPipelines : buildSyntheticPipelines(leads);
+
+    if (rawPipelines === null && Object.keys(savedStageNames).length > 0) {
+      pipelines = pipelines.map(p => ({
+        ...p,
+        name: savedStageNames[`p_${p.id}`] || p.name,
+        _embedded: {
+          statuses: p._embedded.statuses.map(s => ({
+            ...s,
+            name: savedStageNames[`s_${s.id}`] || s.name,
+          })),
+        },
+      }));
+    }
+
+    const embeddedLossReasons = extractLossReasonsFromLeads(leads);
+    const mergedLossReasons = [...lossReasons];
+    embeddedLossReasons.forEach(r => {
+      if (!mergedLossReasons.find(x => x.id === r.id)) mergedLossReasons.push(r);
+    });
+
+    const knownIds = new Set(mergedLossReasons.map(r => r.id));
+    const missingIds = [...new Set(
+      leads.filter(l => l.loss_reason_id && !knownIds.has(l.loss_reason_id)).map(l => l.loss_reason_id)
+    )].slice(0, 20);
+    if (missingIds.length > 0) {
+      const fetched = await fetchLossReasonsByIds(subdomain, token, missingIds);
+      fetched.forEach(r => { if (!mergedLossReasons.find(x => x.id === r.id)) mergedLossReasons.push(r); });
+    }
+
+    res.json({
+      leads,
+      users,
+      pipelines,
+      customFields: { leads: leadCustomFields },
+      account: accountInfo,
+      lossReasons: mergedLossReasons,
+      syntheticPipelines: rawPipelines === null,
+      lastSync: new Date().toISOString(),
+    });
+  } catch (error) {
+    const status = error.response?.status || 500;
+    const responseData = error.response?.data;
+    const message =
+      (typeof responseData === 'object' && responseData !== null
+        ? responseData.detail || responseData.title || responseData.message
+        : typeof responseData === 'string' ? responseData : null) ||
+      error.message || 'Erro ao conectar com a API do Kommo';
+
+    const hint =
+      status === 401 ? 'Token inválido ou expirado. Verifique o token de longa duração.' :
+      status === 403 ? 'Sem permissão. Verifique as permissões do token.' :
+      status === 404 ? 'Conta não encontrada. Verifique o subdomínio.' : null;
+
+    console.error('[Kommo Sync Error]', status, message);
+    res.status(status).json({ error: hint || message, status });
+  }
+});
+
 // ── Static (production) ───────────────────────────────────────────────────────
 
 if (process.env.NODE_ENV === 'production') {

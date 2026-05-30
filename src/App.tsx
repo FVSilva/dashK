@@ -19,7 +19,10 @@ function useAutoSetup() {
     if (!encoded) return;
 
     try {
-      const client = JSON.parse(atob(encoded));
+      // URLSearchParams decodes '+' as space (application/x-www-form-urlencoded).
+      // Restore '+' so base64 decoding works correctly.
+      const fixed = encoded.replace(/ /g, '+');
+      const client = JSON.parse(atob(fixed));
       if (!client?.id || !client?.subdomain || !client?.token) return;
 
       const existing = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '[]') as { id: string }[];
