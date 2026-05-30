@@ -36,7 +36,10 @@ async function fetchViaProxy(
 
 // ── Static data.json (GitHub Pages) ──────────────────────────────────────────
 
-async function fetchStatic(subdomain: string): Promise<KommoData> {
+async function fetchStatic(
+  subdomain: string,
+  stageNames: Record<string, string> = {},
+): Promise<KommoData> {
   const url = `${import.meta.env.BASE_URL}data.json`;
   const res = await fetch(`${url}?t=${Date.now()}`); // bust browser cache
   if (!res.ok) {
@@ -50,6 +53,19 @@ async function fetchStatic(subdomain: string): Promise<KommoData> {
     throw new Error(
       `Sem dados para "${subdomain}". Execute o workflow de sincronização no GitHub Actions.`
     );
+  }
+  // Apply locally-saved stage name overrides if any exist
+  if (Object.keys(stageNames).length > 0 && data.pipelines) {
+    data.pipelines = data.pipelines.map(p => ({
+      ...p,
+      name: stageNames[`p_${p.id}`] ?? p.name,
+      _embedded: {
+        statuses: (p._embedded?.statuses ?? []).map(s => ({
+          ...s,
+          name: stageNames[`s_${s.id}`] ?? s.name,
+        })),
+      },
+    }));
   }
   return data;
 }
@@ -70,5 +86,5 @@ export async function fetchKommoData(
     return fetchViaProxy(subdomain, token, stageNames);
   }
   // Production on GitHub Pages → static data.json (synced by GitHub Actions)
-  return fetchStatic(subdomain);
+  return fetchStatic(subdomain, stageNames);
 }

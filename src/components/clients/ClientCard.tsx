@@ -5,6 +5,8 @@ import { clsx } from 'clsx';
 import { clientColor, getInitials, formatRelative } from '../../utils/formatters';
 import type { Client } from '../../types';
 
+const IS_STATIC = !import.meta.env.DEV && !import.meta.env.VITE_API_URL;
+
 interface ClientCardProps {
   client: Client;
   onEdit: (client: Client) => void;
@@ -37,35 +39,37 @@ export function ClientCard({ client, onEdit, onDelete }: ClientCardProps) {
           {initials}
         </div>
 
-        <div className="relative" onClick={e => e.stopPropagation()}>
-          <button
-            onClick={() => setMenuOpen(v => !v)}
-            className="p-1.5 rounded-lg text-text-muted hover:text-text-primary hover:bg-white/5 transition-all opacity-0 group-hover:opacity-100"
-          >
-            <MoreVertical size={16} />
-          </button>
+        {!IS_STATIC && (
+          <div className="relative" onClick={e => e.stopPropagation()}>
+            <button
+              onClick={() => setMenuOpen(v => !v)}
+              className="p-1.5 rounded-lg text-text-muted hover:text-text-primary hover:bg-white/5 transition-all opacity-0 group-hover:opacity-100"
+            >
+              <MoreVertical size={16} />
+            </button>
 
-          {menuOpen && (
-            <>
-              <div className="fixed inset-0 z-10" onClick={() => setMenuOpen(false)} />
-              <div className="absolute right-0 top-8 z-20 bg-bg-elevated border border-border-subtle rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.6)] py-1 min-w-[140px]">
-                <button
-                  onClick={() => { onEdit(client); setMenuOpen(false); }}
-                  className="flex items-center gap-2 w-full px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors"
-                >
-                  <Pencil size={13} /> Editar
-                </button>
-                <div className="my-1 border-t border-border-default" />
-                <button
-                  onClick={() => { onDelete(client); setMenuOpen(false); }}
-                  className="flex items-center gap-2 w-full px-3 py-2 text-sm text-red-400 hover:text-brand-red hover:bg-brand-red-subtle transition-colors"
-                >
-                  <Trash2 size={13} /> Excluir
-                </button>
-              </div>
-            </>
-          )}
-        </div>
+            {menuOpen && (
+              <>
+                <div className="fixed inset-0 z-10" onClick={() => setMenuOpen(false)} />
+                <div className="absolute right-0 top-8 z-20 bg-bg-elevated border border-border-subtle rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.6)] py-1 min-w-[140px]">
+                  <button
+                    onClick={() => { onEdit(client); setMenuOpen(false); }}
+                    className="flex items-center gap-2 w-full px-3 py-2 text-sm text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors"
+                  >
+                    <Pencil size={13} /> Editar
+                  </button>
+                  <div className="my-1 border-t border-border-default" />
+                  <button
+                    onClick={() => { onDelete(client); setMenuOpen(false); }}
+                    className="flex items-center gap-2 w-full px-3 py-2 text-sm text-red-400 hover:text-brand-red hover:bg-brand-red-subtle transition-colors"
+                  >
+                    <Trash2 size={13} /> Excluir
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+        )}
       </div>
 
       <div className="space-y-1 mb-4">

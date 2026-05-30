@@ -8,6 +8,9 @@ import { Modal } from '../components/ui/Modal';
 import type { Client } from '../types';
 import { Skeleton } from '../components/ui/Skeleton';
 
+// True when deployed to GitHub Pages (no backend, clients come from data.json)
+const IS_STATIC = !import.meta.env.DEV && !import.meta.env.VITE_API_URL;
+
 export function HomePage() {
   const { clients, loadingClients, deleteClient, refreshClients } = useApp();
   const [search, setSearch] = useState('');
@@ -52,13 +55,15 @@ export function HomePage() {
           >
             Atualizar
           </Button>
-          <Button
-            variant="primary"
-            icon={<Plus size={14} />}
-            onClick={() => { setEditingClient(null); setModalOpen(true); }}
-          >
-            Novo Cliente
-          </Button>
+          {!IS_STATIC && (
+            <Button
+              variant="primary"
+              icon={<Plus size={14} />}
+              onClick={() => { setEditingClient(null); setModalOpen(true); }}
+            >
+              Novo Cliente
+            </Button>
+          )}
         </div>
       </div>
 
@@ -101,18 +106,22 @@ export function HomePage() {
                 <Users size={28} className="text-brand-red" />
               </div>
               <p className="text-text-primary font-semibold text-lg mb-1">
-                Nenhum cliente ainda
+                {IS_STATIC ? 'Nenhum dado disponível' : 'Nenhum cliente ainda'}
               </p>
               <p className="text-text-muted text-sm mb-6 max-w-xs">
-                Adicione seu primeiro cliente para começar a visualizar o analytics do Kommo
+                {IS_STATIC
+                  ? 'Execute o workflow "Sync Kommo Data" no GitHub Actions para carregar os dados.'
+                  : 'Adicione seu primeiro cliente para começar a visualizar o analytics do Kommo'}
               </p>
-              <Button
-                variant="primary"
-                icon={<Plus size={14} />}
-                onClick={() => setModalOpen(true)}
-              >
-                Adicionar Cliente
-              </Button>
+              {!IS_STATIC && (
+                <Button
+                  variant="primary"
+                  icon={<Plus size={14} />}
+                  onClick={() => setModalOpen(true)}
+                >
+                  Adicionar Cliente
+                </Button>
+              )}
             </>
           )}
         </div>
