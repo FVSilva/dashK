@@ -24,10 +24,13 @@ jobs:
           KOMMO_SUBDOMAIN: ${{ secrets.KOMMO_SUBDOMAIN }}
           KOMMO_TOKEN: ${{ secrets.KOMMO_TOKEN }}
 
-      - name: Commit & push data.json
-        run: |
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git config user.name  "github-actions[bot]"
-          git add public/data.json
-          git diff --staged --quiet || git commit -m "chore: sync Kommo data [skip ci]"
-          git push
+      # Push ONLY data.json directly into the gh-pages branch.
+      # keep_files: true preserves all the app files already deployed there.
+      # No full rebuild needed — just updates the one JSON file.
+      - name: Publish data.json to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          keep_files: true
+          commit_message: "sync: update Kommo data"
