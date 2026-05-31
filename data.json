@@ -16027,6 +16027,38 @@
             }
           ]
         }
+      },
+      {
+        "id": 77234165,
+        "name": "Lead #77234165",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104850943,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1780184324,
+        "updated_at": 1780187930,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77234165?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
       }
     ],
     "users": [
@@ -16211,7 +16243,7 @@
           "statuses": [
             {
               "id": 104115763,
-              "name": "Etapa de leads de entrada",
+              "name": "Incoming leads",
               "sort": 10,
               "is_editable": false,
               "pipeline_id": 13495811,
@@ -16424,7 +16456,7 @@
           "statuses": [
             {
               "id": 104521175,
-              "name": "Etapa de leads de entrada",
+              "name": "Incoming leads",
               "sort": 10,
               "is_editable": false,
               "pipeline_id": 13546711,
@@ -17351,9 +17383,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1780105551,
+      "created_at": 1780203819,
       "created_by": 0,
-      "updated_at": 1780105551,
+      "updated_at": 1780203819,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -17459,6 +17491,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-05-30T01:45:53.073Z"
+    "lastSync": "2026-05-31T05:03:40.712Z"
   }
 }
