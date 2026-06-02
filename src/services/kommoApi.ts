@@ -44,14 +44,14 @@ async function fetchStatic(
   const res = await fetch(`${url}?t=${Date.now()}`); // bust browser cache
   if (!res.ok) {
     throw new Error(
-      'Dados ainda não sincronizados. Vá em Actions → "Sync Kommo Data" → Run workflow.'
+      'Dados não encontrados. Aguarde a sincronização automática (a cada 30 min) ou acesse o repositório e execute "Sync Kommo Data" manualmente.'
     );
   }
   const all = await res.json() as Record<string, KommoData>;
   const data = all[subdomain];
   if (!data) {
     throw new Error(
-      `Sem dados para "${subdomain}". Execute o workflow de sincronização no GitHub Actions.`
+      `Dados de "${subdomain}" ainda não sincronizados. A sincronização ocorre automaticamente a cada 30 minutos.`
     );
   }
   // Apply locally-saved stage name overrides if any exist
