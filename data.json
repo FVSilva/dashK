@@ -17021,9 +17021,9 @@
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 15073975,
+        "updated_by": 0,
         "created_at": 1778511666,
-        "updated_at": 1780518915,
+        "updated_at": 1780519080,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -17049,6 +17049,38 @@
               }
             }
           ]
+        }
+      },
+      {
+        "id": 77358553,
+        "name": "Lead #77358553",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104850943,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1780523592,
+        "updated_at": 1780527200,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77358553?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
         }
       }
     ],
@@ -18374,9 +18406,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1780519072,
+      "created_at": 1780527974,
       "created_by": 0,
-      "updated_at": 1780519072,
+      "updated_at": 1780527974,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -18482,6 +18514,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-06-03T20:37:53.959Z"
+    "lastSync": "2026-06-03T23:06:16.142Z"
   }
 }
