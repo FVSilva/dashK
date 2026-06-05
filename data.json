@@ -16519,38 +16519,6 @@
         }
       },
       {
-        "id": 74821568,
-        "name": "Gerente",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115775,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776189228,
-        "updated_at": 1780518255,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74821568?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 74905000,
         "name": "HO LONDRINA - OFTALMOLOGIA LTDA",
         "price": 0,
@@ -16720,38 +16688,6 @@
         }
       },
       {
-        "id": 77378295,
-        "name": "Lead #77378295",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1780597490,
-        "updated_at": 1780601095,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77378295?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 77380861,
         "name": "teste",
         "price": 0,
@@ -16813,47 +16749,6 @@
           "tags": [],
           "loss_reason": [],
           "companies": []
-        }
-      },
-      {
-        "id": 74870296,
-        "name": "Hoftalon Centro de Pesquisa e Estudo da Visao",
-        "price": 10400,
-        "price_with_minor_units": 10400,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106488924,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1776275376,
-        "updated_at": 1780654405,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74870296?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 110903864,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110903864?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
         }
       },
       {
@@ -16981,6 +16876,79 @@
         }
       },
       {
+        "id": 74821568,
+        "name": "Gerente",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1776189228,
+        "updated_at": 1780677707,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74821568?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 74870296,
+        "name": "Hoftalon Centro de Pesquisa e Estudo da Visao",
+        "price": 10400,
+        "price_with_minor_units": 10400,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 106488924,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1776275376,
+        "updated_at": 1780677831,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74870296?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 110903864,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110903864?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
         "id": 77318103,
         "name": "HOSPITAL DE OLHOS DO TOCANTINS LTDA",
         "price": 0,
@@ -16993,7 +16961,7 @@
         "created_by": 0,
         "updated_by": 0,
         "created_at": 1780430214,
-        "updated_at": 1780660852,
+        "updated_at": 1780677954,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -17066,19 +17034,19 @@
         }
       },
       {
-        "id": 76137616,
-        "name": "Lead #76137616",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 15073975,
+        "id": 77264699,
+        "name": "SECCHIM E NABACK LTDA",
+        "price": 8090,
+        "price_with_minor_units": 8090,
+        "responsible_user_id": 8029421,
         "group_id": 0,
-        "status_id": 105398163,
+        "status_id": 106376728,
         "pipeline_id": 13495811,
         "loss_reason_id": null,
-        "created_by": 15073975,
+        "created_by": 0,
         "updated_by": 0,
-        "created_at": 1778011250,
-        "updated_at": 1780662942,
+        "created_at": 1780316307,
+        "updated_at": 1780678029,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -17088,7 +17056,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76137616?page=2&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77264699?page=2&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -17096,10 +17064,10 @@
           "loss_reason": [],
           "companies": [
             {
-              "id": 111144150,
+              "id": 113068365,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111144150?page=2&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113068365?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -17119,7 +17087,7 @@
         "created_by": 0,
         "updated_by": 0,
         "created_at": 1780667239,
-        "updated_at": 1780669512,
+        "updated_at": 1780678197,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -17183,19 +17151,19 @@
         }
       },
       {
-        "id": 77264699,
-        "name": "SECCHIM E NABACK LTDA",
-        "price": 8090,
-        "price_with_minor_units": 8090,
-        "responsible_user_id": 8029421,
+        "id": 76137616,
+        "name": "Lead #76137616",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
         "group_id": 0,
-        "status_id": 106376728,
+        "status_id": 105398163,
         "pipeline_id": 13495811,
         "loss_reason_id": null,
-        "created_by": 0,
+        "created_by": 15073975,
         "updated_by": 0,
-        "created_at": 1780316307,
-        "updated_at": 1780671317,
+        "created_at": 1778011250,
+        "updated_at": 1780678293,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -17205,7 +17173,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77264699?page=2&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76137616?page=2&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -17213,14 +17181,46 @@
           "loss_reason": [],
           "companies": [
             {
-              "id": 113068365,
+              "id": 111144150,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113068365?page=2&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111144150?page=2&limit=250&with=loss_reason"
                 }
               }
             }
           ]
+        }
+      },
+      {
+        "id": 77378295,
+        "name": "Lead #77378295",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104850943,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1780597490,
+        "updated_at": 1780680355,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77378295?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
         }
       }
     ],
@@ -18546,9 +18546,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1780677040,
+      "created_at": 1780685898,
       "created_by": 0,
-      "updated_at": 1780677040,
+      "updated_at": 1780685898,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -18654,6 +18654,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-06-05T16:30:41.368Z"
+    "lastSync": "2026-06-05T18:58:19.677Z"
   }
 }
