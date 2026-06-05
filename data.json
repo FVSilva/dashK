@@ -15554,47 +15554,6 @@
         }
       },
       {
-        "id": 74870296,
-        "name": "Hoftalon Centro de Pesquisa e Estudo da Visao",
-        "price": 10400,
-        "price_with_minor_units": 10400,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106488924,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776275376,
-        "updated_at": 1780488161,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74870296?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 110903864,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110903864?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 77085943,
         "name": "Ceeo Centro Especializado Em Exames E Terapia Ocular Ltda",
         "price": 7400,
@@ -17146,6 +17105,47 @@
           "loss_reason": [],
           "companies": []
         }
+      },
+      {
+        "id": 74870296,
+        "name": "Hoftalon Centro de Pesquisa e Estudo da Visao",
+        "price": 10400,
+        "price_with_minor_units": 10400,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 106488924,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1776275376,
+        "updated_at": 1780654405,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74870296?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 110903864,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110903864?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
       }
     ],
     "users": [
@@ -18470,9 +18470,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1780640768,
+      "created_at": 1780655592,
       "created_by": 0,
-      "updated_at": 1780640768,
+      "updated_at": 1780655592,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -18578,6 +18578,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-06-05T06:26:10.383Z"
+    "lastSync": "2026-06-05T10:33:13.541Z"
   }
 }
