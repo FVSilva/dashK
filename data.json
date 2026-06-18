@@ -13644,47 +13644,6 @@
         }
       },
       {
-        "id": 75825296,
-        "name": "Lead #75825296",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 15073975,
-        "group_id": 0,
-        "status_id": 104521139,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 15073975,
-        "updated_by": 15073975,
-        "created_at": 1777574376,
-        "updated_at": 1781098065,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75825296?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 110543312,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110543312?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 77492407,
         "name": "CENTRO OFTALMOLOGICO LYRA E ANTUNES E CIA LTDA",
         "price": 10400,
@@ -13967,47 +13926,6 @@
         }
       },
       {
-        "id": 77552337,
-        "name": "Copmed Centro De Olhos Dos Palmares E Medicos Ltda Me",
-        "price": 8090,
-        "price_with_minor_units": 8090,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115779,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1781183319,
-        "updated_at": 1781191351,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77552337?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 113444211,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113444211?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 75292450,
         "name": "INSTITUTO BRASILEIRO DE OFTALMOLOGIA E P DA CEGUEIRA",
         "price": 10400,
@@ -14080,47 +13998,6 @@
               "_links": {
                 "self": {
                   "href": "https://contatocyrculos.kommo.com/api/v4/companies/110894154?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 76138082,
-        "name": "SAUDE LINK",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 15073975,
-        "group_id": 0,
-        "status_id": 106376664,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 15073975,
-        "updated_by": 0,
-        "created_at": 1778012107,
-        "updated_at": 1781201357,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76138082?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 111144600,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111144600?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -14330,89 +14207,6 @@
         }
       },
       {
-        "id": 77551259,
-        "name": "Eduardo Nogueira Neves",
-        "price": 16180,
-        "price_with_minor_units": 16180,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115779,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1781180077,
-        "updated_at": 1781281520,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Não",
-                "enum_id": 735826246,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656406,
-            "field_name": "Deseja",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Recondicionar uma caneta",
-                "enum_id": 735826248,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "Visalis  2  22326703847 Eduardoneves.vet@gmail.com"
-              }
-            ]
-          },
-          {
-            "field_id": 3656408,
-            "field_name": "Origem",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Redes sociais",
-                "enum_id": 735826256,
-                "enum_code": null
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77551259?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 75809476,
         "name": "Alexandre Luís Soares Jr MEDOPTIC",
         "price": 0,
@@ -14447,91 +14241,6 @@
               "_links": {
                 "self": {
                   "href": "https://contatocyrculos.kommo.com/api/v4/companies/112174483?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 76233664,
-        "name": "INSTITUTO PRO-VISAO AMERICANA LTDA",
-        "price": 7000,
-        "price_with_minor_units": 7000,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106376728,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1778155563,
-        "updated_at": 1781294381,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Sim",
-                "enum_id": 735826244,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656406,
-            "field_name": "Deseja",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Recondicionar uma caneta",
-                "enum_id": 735826248,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "Olá Fernanda"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76233664?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [
-            {
-              "id": 2117086,
-              "name": "cliente_base",
-              "color": null
-            }
-          ],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 111277340,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111277340?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -15033,38 +14742,6 @@
               }
             }
           ]
-        }
-      },
-      {
-        "id": 76255240,
-        "name": "Lead #76255240",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115767,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1778182534,
-        "updated_at": 1781536785,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76255240?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
         }
       },
       {
@@ -16577,38 +16254,6 @@
         }
       },
       {
-        "id": 77654917,
-        "name": "Lead #77654917",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115767,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1781536968,
-        "updated_at": 1781638426,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77654917?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 77696811,
         "name": "Autolead: Hospital Oftalmologico de Anapolis",
         "price": 14800,
@@ -17255,72 +16900,6 @@
         }
       },
       {
-        "id": 77592675,
-        "name": "CPO Centro Paranaense de Oftalmologia",
-        "price": 8090,
-        "price_with_minor_units": 8090,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115779,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1781282367,
-        "updated_at": 1781698417,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Não",
-                "enum_id": 735826246,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "OS 1935"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77592675?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 113582725,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113582725?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 76847691,
         "name": "ASSOCIACAO SAO LEOPOLDO MANDIC - SLMANDIC",
         "price": 7400,
@@ -17512,38 +17091,6 @@
               }
             }
           ]
-        }
-      },
-      {
-        "id": 76074412,
-        "name": "TI do CRM",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 15073975,
-        "group_id": 0,
-        "status_id": 104115775,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1777914940,
-        "updated_at": 1781701606,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76074412?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
         }
       },
       {
@@ -18039,102 +17586,6 @@
         }
       },
       {
-        "id": 75265916,
-        "name": "Lead #75265916",
-        "price": 32360,
-        "price_with_minor_units": 32360,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106488920,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776957036,
-        "updated_at": 1781716595,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3829608,
-            "field_name": "Nota",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "8"
-              }
-            ]
-          },
-          {
-            "field_id": 3829610,
-            "field_name": "Motivo",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "Na minha opinião devemos estar sempre melhorando"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75265916?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 109182800,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/109182800?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 74822566,
-        "name": "Motoboy",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115775,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776190973,
-        "updated_at": 1781718142,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74822566?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 77549925,
         "name": "HOSPITAL DE OLHOS DO RIO GRANDE DO NORTE LTDA",
         "price": 11400,
@@ -18403,47 +17854,6 @@
         }
       },
       {
-        "id": 77724527,
-        "name": "OFTATEK ENGENHARIA E PRODUTOS MEDICOS E HOSPITALARES LTDA",
-        "price": 57000,
-        "price_with_minor_units": 57000,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115779,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1781721345,
-        "updated_at": 1781726766,
-        "closed_at": null,
-        "closest_task_at": 1781807400,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77724527?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 113637503,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113637503?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 74824230,
         "name": "Connect Oftalmo",
         "price": 0,
@@ -18593,47 +18003,6 @@
         "_links": {
           "self": {
             "href": "https://contatocyrculos.kommo.com/api/v4/leads/77728217?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 113307579,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113307579?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 77471659,
-        "name": "A.M. CLINICA MEDICA LTDA",
-        "price": 14800,
-        "price_with_minor_units": 14800,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104521179,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1780946282,
-        "updated_at": 1781729657,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77471659?page=2&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -18948,50 +18317,6 @@
         }
       },
       {
-        "id": 74841422,
-        "name": "Lead #74841422",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106489928,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776202582,
-        "updated_at": 1781783901,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3829608,
-            "field_name": "Nota",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "Bom-dia"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74841422?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 75121908,
         "name": "COOI - Centro de Otorrino e Oftalmologia Integrados",
         "price": 11400,
@@ -19209,126 +18534,6 @@
         }
       },
       {
-        "id": 74827236,
-        "name": "P. S. M. PRESTACAO DE SERVICOS MEDICOS LTDA",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106488924,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776197593,
-        "updated_at": 1781787672,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74827236?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 111122690,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111122690?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 76167092,
-        "name": "FUNDAÇÃO ALTINO VENTURA",
-        "price": 34240,
-        "price_with_minor_units": 34240,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106376728,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1778071615,
-        "updated_at": 1781787838,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Não",
-                "enum_id": 735826246,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656406,
-            "field_name": "Deseja",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Recondicionar uma caneta",
-                "enum_id": 735826248,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "Tudo sim e vc?"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76167092?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 111185390,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111185390?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 74927322,
         "name": "SPDM - ASSOCIACAO PAULISTA",
         "price": 11500,
@@ -19438,47 +18643,6 @@
               "_links": {
                 "self": {
                   "href": "https://contatocyrculos.kommo.com/api/v4/companies/112682011?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 74823004,
-        "name": "Secretário",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115775,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776191792,
-        "updated_at": 1781791807,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74823004?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 110866636,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110866636?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -19612,47 +18776,6 @@
               "_links": {
                 "self": {
                   "href": "https://contatocyrculos.kommo.com/api/v4/companies/112746633?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 74905624,
-        "name": "SAMEDIL - SERVICOS DE ATENDIMENTO MEDICO S/A",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106376664,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776339722,
-        "updated_at": 1781794983,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74905624?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 113303929,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113303929?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -19830,222 +18953,6 @@
               "_links": {
                 "self": {
                   "href": "https://contatocyrculos.kommo.com/api/v4/companies/112895423?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 76475178,
-        "name": "GERENCIA",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 15073975,
-        "group_id": 0,
-        "status_id": 104542347,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 15073975,
-        "updated_by": 15073975,
-        "created_at": 1778605035,
-        "updated_at": 1781799713,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76475178?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 77164621,
-        "name": "CLINICA DE OLHOS SAO CAMILO LTDA",
-        "price": 11400,
-        "price_with_minor_units": 11400,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104521179,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1779979483,
-        "updated_at": 1781799910,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Não",
-                "enum_id": 735826246,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656406,
-            "field_name": "Deseja",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Recondicionar uma caneta",
-                "enum_id": 735826248,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "* Modelo: CANETA CENTURION OZIL * Quantidade: 01 * CNPJ ou CPF: CNPJ 06.687.453/0001-14  * E-mail: administracao@clinicasaocamilothe.com.br"
-              }
-            ]
-          },
-          {
-            "field_id": 3656408,
-            "field_name": "Origem",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Indicação / Outro",
-                "enum_id": 735826258,
-                "enum_code": null
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77164621?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 112895423,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/112895423?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 77060415,
-        "name": "INSTITUTO DE OFTALMOLOGIA ENCANTADO LTDA",
-        "price": 7400,
-        "price_with_minor_units": 7400,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104521179,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1779796046,
-        "updated_at": 1781800012,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Não",
-                "enum_id": 735826246,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656406,
-            "field_name": "Deseja",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Recondicionar uma caneta",
-                "enum_id": 735826248,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "Ola, Fernanda. Isso mesmo"
-              }
-            ]
-          },
-          {
-            "field_id": 3656408,
-            "field_name": "Origem",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Indicação / Outro",
-                "enum_id": 735826258,
-                "enum_code": null
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77060415?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 112746633,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/112746633?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -20390,6 +19297,786 @@
         }
       },
       {
+        "id": 75809500,
+        "name": "DR. PLINIO",
+        "price": 28500,
+        "price_with_minor_units": 28500,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104521143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1774289836,
+        "updated_at": 1781801030,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75809500?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 111146292,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111146292?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 76167092,
+        "name": "FUNDAÇÃO ALTINO VENTURA",
+        "price": 34240,
+        "price_with_minor_units": 34240,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 106376728,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1778071615,
+        "updated_at": 1781801159,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Não",
+                "enum_id": 735826246,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656406,
+            "field_name": "Deseja",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Recondicionar uma caneta",
+                "enum_id": 735826248,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "Tudo sim e vc?"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76167092?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 111185390,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111185390?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 77654917,
+        "name": "nfermeira Dr. Fernando Prisma clinica e Vila Nova",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": 36927192,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1781536968,
+        "updated_at": 1781801572,
+        "closed_at": 1781801570,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77654917?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [
+            {
+              "id": 36927192,
+              "name": "Atendimento finalizado",
+              "sort": 6,
+              "created_at": 1779296207,
+              "updated_at": 1779296207,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/loss_reasons/36927192?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ],
+          "companies": [
+            {
+              "id": 113655993,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113655993?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 76255240,
+        "name": "Lead #76255240",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1778182534,
+        "updated_at": 1781801609,
+        "closed_at": 1781801609,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76255240?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 74827236,
+        "name": "P. S. M. PRESTACAO DE SERVICOS MEDICOS LTDA",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 106489928,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1776197593,
+        "updated_at": 1781802004,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74827236?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 111122690,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111122690?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 77745035,
+        "name": "Autolead: INSTITUTO PRO-VISAO AMERICANA LTDA",
+        "price": 7000,
+        "price_with_minor_units": 7000,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 142,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1781802236,
+        "updated_at": 1781802236,
+        "closed_at": 1781802236,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Sim",
+                "enum_id": 735826244,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656406,
+            "field_name": "Deseja",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Recondicionar uma caneta",
+                "enum_id": 735826248,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "Olá Fernanda"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77745035?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [
+            {
+              "id": 2117086,
+              "name": "cliente_base",
+              "color": null
+            }
+          ],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 111277340,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111277340?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 77471659,
+        "name": "A.M. CLINICA MEDICA LTDA",
+        "price": 14800,
+        "price_with_minor_units": 14800,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104521179,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1780946282,
+        "updated_at": 1781802266,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77471659?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 113307579,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113307579?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 74905624,
+        "name": "SAMEDIL - SERVICOS DE ATENDIMENTO MEDICO S/A",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104542347,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1776339722,
+        "updated_at": 1781802344,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74905624?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 113303929,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113303929?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 76138082,
+        "name": "SAUDE LINK",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 106376664,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 15073975,
+        "updated_by": 15073975,
+        "created_at": 1778012107,
+        "updated_at": 1781802422,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76138082?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 111144600,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111144600?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 77745123,
+        "name": "Lead #77745123",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115767,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1781802502,
+        "updated_at": 1781802581,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77745123?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 77060415,
+        "name": "INSTITUTO DE OFTALMOLOGIA ENCANTADO LTDA",
+        "price": 7400,
+        "price_with_minor_units": 7400,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 106489928,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1779796046,
+        "updated_at": 1781803075,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Não",
+                "enum_id": 735826246,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656406,
+            "field_name": "Deseja",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Recondicionar uma caneta",
+                "enum_id": 735826248,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "Ola, Fernanda. Isso mesmo"
+              }
+            ]
+          },
+          {
+            "field_id": 3656408,
+            "field_name": "Origem",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Indicação / Outro",
+                "enum_id": 735826258,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3829608,
+            "field_name": "Nota",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "10"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77060415?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 112746633,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/112746633?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 77592675,
+        "name": "CPO Centro Paranaense de Oftalmologia",
+        "price": 8090,
+        "price_with_minor_units": 8090,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115779,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1781282367,
+        "updated_at": 1781803866,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Não",
+                "enum_id": 735826246,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "OS 1935"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77592675?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 113582725,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113582725?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 75825296,
+        "name": "Lead #75825296",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 104521139,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 15073975,
+        "updated_by": 0,
+        "created_at": 1777574376,
+        "updated_at": 1781803976,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75825296?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 110543312,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110543312?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 77551259,
+        "name": "Eduardo Nogueira Neves",
+        "price": 16180,
+        "price_with_minor_units": 16180,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115779,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1781180077,
+        "updated_at": 1781804051,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Não",
+                "enum_id": 735826246,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656406,
+            "field_name": "Deseja",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Recondicionar uma caneta",
+                "enum_id": 735826248,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "Visalis  2  22326703847 Eduardoneves.vet@gmail.com"
+              }
+            ]
+          },
+          {
+            "field_id": 3656408,
+            "field_name": "Origem",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Redes sociais",
+                "enum_id": 735826256,
+                "enum_code": null
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77551259?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
         "id": 75678214,
         "name": "Recepção",
         "price": 0,
@@ -20402,7 +20089,7 @@
         "created_by": 0,
         "updated_by": 15073975,
         "created_at": 1777461572,
-        "updated_at": 1781800233,
+        "updated_at": 1781804444,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -20431,19 +20118,63 @@
         }
       },
       {
-        "id": 75809500,
-        "name": "DR. PLINIO",
-        "price": 28500,
-        "price_with_minor_units": 28500,
+        "id": 74841422,
+        "name": "Lead #74841422",
+        "price": 0,
+        "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
         "group_id": 0,
-        "status_id": 104521143,
-        "pipeline_id": 13495811,
+        "status_id": 106489928,
+        "pipeline_id": 13546711,
         "loss_reason_id": null,
         "created_by": 0,
         "updated_by": 0,
-        "created_at": 1774289836,
-        "updated_at": 1781800617,
+        "created_at": 1776202582,
+        "updated_at": 1781804695,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3829608,
+            "field_name": "Nota",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "Bom-dia"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74841422?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 77552337,
+        "name": "Copmed Centro De Olhos Dos Palmares E Medicos Ltda Me",
+        "price": 8090,
+        "price_with_minor_units": 8090,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115779,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1781183319,
+        "updated_at": 1781804845,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -20453,7 +20184,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75809500?page=2&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77552337?page=2&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -20461,10 +20192,470 @@
           "loss_reason": [],
           "companies": [
             {
-              "id": 111146292,
+              "id": 113444211,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111146292?page=2&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113444211?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 74822566,
+        "name": "Motoboy",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1776190973,
+        "updated_at": 1781804891,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74822566?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 76074412,
+        "name": "TI do CRM",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1777914940,
+        "updated_at": 1781806875,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76074412?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 77724527,
+        "name": "OFTATEK ENGENHARIA E PRODUTOS MEDICOS E HOSPITALARES LTDA",
+        "price": 57000,
+        "price_with_minor_units": 57000,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115779,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1781721345,
+        "updated_at": 1781808543,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77724527?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 113637503,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113637503?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 76233664,
+        "name": "INSTITUTO PRO-VISAO AMERICANA LTDA",
+        "price": 7000,
+        "price_with_minor_units": 7000,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104521179,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1778155563,
+        "updated_at": 1781809293,
+        "closed_at": null,
+        "closest_task_at": 1782324000,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Sim",
+                "enum_id": 735826244,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656406,
+            "field_name": "Deseja",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Recondicionar uma caneta",
+                "enum_id": 735826248,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "Olá Fernanda"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76233664?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [
+            {
+              "id": 2117086,
+              "name": "cliente_base",
+              "color": null
+            }
+          ],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 111277340,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111277340?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 75265916,
+        "name": "2020 Serviços Médicos",
+        "price": 32360,
+        "price_with_minor_units": 32360,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 106488920,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1776957036,
+        "updated_at": 1781809427,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3829608,
+            "field_name": "Nota",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "8"
+              }
+            ]
+          },
+          {
+            "field_id": 3829610,
+            "field_name": "Motivo",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "Na minha opinião devemos estar sempre melhorando"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75265916?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 109182800,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/109182800?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 76475178,
+        "name": "GERENCIA",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 104542347,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 15073975,
+        "updated_by": 15073975,
+        "created_at": 1778605035,
+        "updated_at": 1781809996,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76475178?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 77164621,
+        "name": "CLINICA DE OLHOS SAO CAMILO LTDA",
+        "price": 11400,
+        "price_with_minor_units": 11400,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104521179,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1779979483,
+        "updated_at": 1781810334,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Não",
+                "enum_id": 735826246,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656406,
+            "field_name": "Deseja",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Recondicionar uma caneta",
+                "enum_id": 735826248,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "* Modelo: CANETA CENTURION OZIL * Quantidade: 01 * CNPJ ou CPF: CNPJ 06.687.453/0001-14  * E-mail: administracao@clinicasaocamilothe.com.br"
+              }
+            ]
+          },
+          {
+            "field_id": 3656408,
+            "field_name": "Origem",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Indicação / Outro",
+                "enum_id": 735826258,
+                "enum_code": null
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77164621?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 112895423,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/112895423?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 74823004,
+        "name": "Secretário",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1776191792,
+        "updated_at": 1781810374,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74823004?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 110866636,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110866636?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 77744723,
+        "name": "Lead #77744723",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 104542347,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 15073975,
+        "updated_by": 15073975,
+        "created_at": 1781801150,
+        "updated_at": 1781810409,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77744723?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 113655881,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113655881?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -21794,9 +21985,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1781800620,
+      "created_at": 1781811060,
       "created_by": 0,
-      "updated_at": 1781800620,
+      "updated_at": 1781811060,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -21902,6 +22093,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-06-18T16:37:02.245Z"
+    "lastSync": "2026-06-18T19:31:02.412Z"
   }
 }
