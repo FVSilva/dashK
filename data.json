@@ -21961,6 +21961,72 @@
             }
           ]
         }
+      },
+      {
+        "id": 77880285,
+        "name": "Wilson Hida",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 104542347,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1782340557,
+        "updated_at": 1782340557,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3829714,
+            "field_name": "UTM SOURCE",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3829718,
+            "field_name": "UTM CAMPAIGN",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3829716,
+            "field_name": "UTM MEDIUM",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77880285?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
       }
     ],
     "users": [
@@ -23285,9 +23351,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1782336275,
+      "created_at": 1782341297,
       "created_by": 0,
-      "updated_at": 1782336275,
+      "updated_at": 1782341297,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -23393,6 +23459,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-06-24T21:24:36.644Z"
+    "lastSync": "2026-06-24T22:48:18.986Z"
   }
 }
