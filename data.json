@@ -22805,47 +22805,6 @@
         }
       },
       {
-        "id": 74823004,
-        "name": "Secretário",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115775,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776191792,
-        "updated_at": 1782741420,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74823004?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 110866636,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110866636?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 74929290,
         "name": "Hanna Portaria",
         "price": 0,
@@ -22887,6 +22846,157 @@
         }
       },
       {
+        "id": 77942719,
+        "name": "Lead #77942719",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1782607832,
+        "updated_at": 1782777156,
+        "closed_at": 1782777156,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77942719?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 77963651,
+        "name": "Lead #77963651",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1782739496,
+        "updated_at": 1782818616,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Não",
+                "enum_id": 735826246,
+                "enum_code": null
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77963651?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 77654917,
+        "name": "Enfermeira Dr. Fernando Prisma centro médico Vila Nova",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 106376664,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1781536968,
+        "updated_at": 1782818884,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77654917?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 113655993,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113655993?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 77924461,
+        "name": "Lead #77924461",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115767,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1782507115,
+        "updated_at": 1782819206,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77924461?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
         "id": 77873367,
         "name": "BANCO DE OLHOS DE SOROCABA",
         "price": 19800,
@@ -22897,9 +23007,9 @@
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
+        "updated_by": 15073975,
         "created_at": 1782321773,
-        "updated_at": 1782741932,
+        "updated_at": 1782819537,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -22972,69 +23082,35 @@
         }
       },
       {
-        "id": 77963651,
-        "name": "Lead #77963651",
-        "price": 0,
-        "price_with_minor_units": 0,
+        "id": 77964783,
+        "name": "OFTALMO RIO - CENTRO DE MICRO CIRURGIA OCULAR LTDA",
+        "price": 10400,
+        "price_with_minor_units": 10400,
         "responsible_user_id": 8029421,
         "group_id": 0,
-        "status_id": 104115767,
+        "status_id": 104115779,
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1782739496,
-        "updated_at": 1782742053,
+        "updated_by": 15073975,
+        "created_at": 1782743075,
+        "updated_at": 1782820766,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
         "custom_fields_values": [
           {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
+            "field_id": 3656414,
+            "field_name": "Observação",
             "field_code": null,
-            "field_type": "select",
+            "field_type": "text",
             "values": [
               {
-                "value": "Não",
-                "enum_id": 735826246,
-                "enum_code": null
+                "value": "OS 1957"
               }
             ]
           }
         ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77963651?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 77964783,
-        "name": "Lead #77964783",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115767,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1782743075,
-        "updated_at": 1782743398,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
         "score": null,
         "account_id": 36309147,
         "labor_cost": null,
@@ -23046,44 +23122,12 @@
         "_embedded": {
           "tags": [],
           "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 77654917,
-        "name": "Enfermeira Dr. Fernando Prisma centro médico Vila Nova",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106376664,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1781536968,
-        "updated_at": 1782749624,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77654917?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
           "companies": [
             {
-              "id": 113655993,
+              "id": 114030603,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113655993?page=2&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114030603?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -23101,9 +23145,9 @@
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
+        "updated_by": 15073975,
         "created_at": 1782773319,
-        "updated_at": 1782773339,
+        "updated_at": 1782821020,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -23123,20 +23167,20 @@
         }
       },
       {
-        "id": 77942719,
-        "name": "Lead #77942719",
+        "id": 77983161,
+        "name": "Lead #77983161",
         "price": 0,
         "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
         "group_id": 0,
-        "status_id": 143,
+        "status_id": 104115767,
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1782607832,
-        "updated_at": 1782777156,
-        "closed_at": 1782777156,
+        "updated_by": 15073975,
+        "created_at": 1782819188,
+        "updated_at": 1782821063,
+        "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
         "custom_fields_values": null,
@@ -23145,7 +23189,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77942719?page=2&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77983161?page=2&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -23167,7 +23211,7 @@
         "created_by": 0,
         "updated_by": 0,
         "created_at": 1776213343,
-        "updated_at": 1782777830,
+        "updated_at": 1782821524,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -23229,19 +23273,19 @@
         }
       },
       {
-        "id": 77924461,
-        "name": "Lead #77924461",
+        "id": 74823004,
+        "name": "Secretário",
         "price": 0,
         "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
         "group_id": 0,
-        "status_id": 104115767,
+        "status_id": 104115775,
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1782507115,
-        "updated_at": 1782784536,
+        "updated_by": 15073975,
+        "created_at": 1776191792,
+        "updated_at": 1782822310,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -23251,13 +23295,22 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77924461?page=2&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74823004?page=2&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
           "tags": [],
           "loss_reason": [],
-          "companies": []
+          "companies": [
+            {
+              "id": 110866636,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110866636?page=2&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
         }
       }
     ],
@@ -23443,7 +23496,7 @@
           "statuses": [
             {
               "id": 104115763,
-              "name": "Incoming leads",
+              "name": "Etapa de leads de entrada",
               "sort": 10,
               "is_editable": false,
               "pipeline_id": 13495811,
@@ -23656,7 +23709,7 @@
           "statuses": [
             {
               "id": 104521175,
-              "name": "Incoming leads",
+              "name": "Etapa de leads de entrada",
               "sort": 10,
               "is_editable": false,
               "pipeline_id": 13546711,
@@ -24583,9 +24636,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1782814017,
+      "created_at": 1782822540,
       "created_by": 0,
-      "updated_at": 1782814017,
+      "updated_at": 1782822540,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -24691,6 +24744,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-06-30T10:06:59.211Z"
+    "lastSync": "2026-06-30T12:29:01.887Z"
   }
 }
