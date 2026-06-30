@@ -22563,38 +22563,6 @@
         }
       },
       {
-        "id": 77924461,
-        "name": "Lead #77924461",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115767,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1782507115,
-        "updated_at": 1782736711,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77924461?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 77813265,
         "name": "OZN HEALTH SPE S.A",
         "price": 20700,
@@ -23258,6 +23226,38 @@
               }
             }
           ]
+        }
+      },
+      {
+        "id": 77924461,
+        "name": "Lead #77924461",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115767,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1782507115,
+        "updated_at": 1782784536,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77924461?page=2&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
         }
       }
     ],
@@ -24583,9 +24583,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1782783033,
+      "created_at": 1782800073,
       "created_by": 0,
-      "updated_at": 1782783033,
+      "updated_at": 1782800073,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -24691,6 +24691,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-06-30T01:30:34.551Z"
+    "lastSync": "2026-06-30T06:14:35.001Z"
   }
 }
