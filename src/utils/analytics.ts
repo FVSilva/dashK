@@ -2,6 +2,7 @@ import type {
   Lead, Pipeline, User, CustomField, CustomFieldValue,
   KPIData, StageMetric, UserMetric, StageTimeMetric, LeadTrendPoint, Insight,
   LossReason, LossReasonStat, CumulativeTrendPoint,
+  MonthlyMRRPoint, ContractRangeStat, PipelineForecastStat,
 } from '../types';
 
 function buildStatusSets(pipelines: Pipeline[]) {
@@ -347,6 +348,97 @@ export function computeCumulativeTrend(
     cumRevenue += p.revenue;
     return { ...p, cumTotal, cumWon, cumLost, cumRevenue };
   });
+}
+
+const MONTH_NAMES_PT = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+
+export function computeMonthlyMRR(leads: Lead[], pipelines: Pipeline[]): MonthlyMRRPoint[] {
+  const { wonIds, lostIds } = buildStatusSets(pipelines);
+  const wonLeads = leads.filter(l => l.closed_at && classifyLead(l, wonIds, lostIds) === 'won');
+
+  const byMonth = new Map<string, { mrr: number; count: number }>();
+  wonLeads.forEach(l => {
+    const d = new Date(l.closed_at! * 1000);
+    const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+    if (!byMonth.has(key)) byMonth.set(key, { mrr: 0, count: 0 });
+    const b = byMonth.get(key)!;
+    b.mrr += l.price || 0;
+    b.count++;
+  });
+
+  const now = new Date();
+  const months: MonthlyMRRPoint[] = [];
+  for (let i = 5; i >= 0; i--) {
+    const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+    const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+    months.push({
+      month: key,
+      label: `${MONTH_NAMES_PT[d.getMonth()]} ${String(d.getFullYear()).slice(2)}`,
+      mrr: byMonth.get(key)?.mrr ?? 0,
+      count: byMonth.get(key)?.count ?? 0,
+    });
+  }
+  return months;
+}
+
+export function computeContractHistogram(leads: Lead[], pipelines: Pipeline[]): ContractRangeStat[] {
+  const { wonIds, lostIds } = buildStatusSets(pipelines);
+  const wonLeads = leads.filter(l => classifyLead(l, wonIds, lostIds) === 'won' && (l.price || 0) > 0);
+
+  const ranges: ContractRangeStat[] = [
+    { range: 'Até R$1k', min: 0, max: 1000, count: 0, totalValue: 0 },
+    { range: 'R$1k–5k', min: 1000, max: 5000, count: 0, totalValue: 0 },
+    { range: 'R$5k–10k', min: 5000, max: 10000, count: 0, totalValue: 0 },
+    { range: 'R$10k–25k', min: 10000, max: 25000, count: 0, totalValue: 0 },
+    { range: 'R$25k–50k', min: 25000, max: 50000, count: 0, totalValue: 0 },
+    { range: 'Acima R$50k', min: 50000, max: null, count: 0, totalValue: 0 },
+  ];
+
+  wonLeads.forEach(l => {
+    const price = l.price || 0;
+    const bucket = ranges.find(r => price >= r.min && (r.max === null || price < r.max));
+    if (bucket) { bucket.count++; bucket.totalValue += price; }
+  });
+
+  return ranges;
+}
+
+export function computePipelineForecast(
+  leads: Lead[],
+  pipeline: Pipeline,
+  pipelines: Pipeline[]
+): PipelineForecastStat[] {
+  const { wonIds, lostIds } = buildStatusSets(pipelines);
+  const pLeads = leads.filter(l => l.pipeline_id === pipeline.id);
+  const wonCount = pLeads.filter(l => classifyLead(l, wonIds, lostIds) === 'won').length;
+  const lostCount = pLeads.filter(l => classifyLead(l, wonIds, lostIds) === 'lost').length;
+  const closedCount = wonCount + lostCount;
+  const baseConv = closedCount > 0 ? wonCount / closedCount : 0.3;
+
+  const activeStages = pipeline._embedded.statuses
+    .filter(s => s.type === 0)
+    .sort((a, b) => a.sort - b.sort);
+
+  const total = activeStages.length || 1;
+
+  return activeStages.map((status, idx) => {
+    const active = pLeads.filter(
+      l => l.status_id === status.id && classifyLead(l, wonIds, lostIds) === 'active'
+    );
+    const pipelineValue = active.reduce((s, l) => s + (l.price || 0), 0);
+    // Later stages → higher conversion probability
+    const stageFactor = (idx + 1) / total;
+    const convRate = Math.min(baseConv * (0.5 + stageFactor), 0.97);
+    return {
+      stageId: status.id,
+      stageName: status.name,
+      activeCount: active.length,
+      pipelineValue,
+      conversionRate: convRate * 100,
+      expectedRevenue: pipelineValue * convRate,
+      color: status.color || '#E5173F',
+    };
+  }).filter(s => s.activeCount > 0);
 }
 
 export function computeFunnelStages(

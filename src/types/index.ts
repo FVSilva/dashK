@@ -165,3 +165,28 @@ export interface UserMetric {
   avgDaysToClose: number;
   avgActiveDays: number; // avg age of active leads — proxy for responsiveness
 }
+
+export interface MonthlyMRRPoint {
+  month: string;
+  label: string;
+  mrr: number;
+  count: number;
+}
+
+export interface ContractRangeStat {
+  range: string;
+  min: number;
+  max: number | null;
+  count: number;
+  totalValue: number;
+}
+
+export interface PipelineForecastStat {
+  stageId: number;
+  stageName: string;
+  activeCount: number;
+  pipelineValue: number;
+  conversionRate: number;
+  expectedRevenue: number;
+  color: string;
+}

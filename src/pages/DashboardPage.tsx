@@ -4,7 +4,7 @@ import {
   RefreshCw, ArrowLeft, TrendingUp, Users, CheckCircle,
   XCircle, DollarSign, Target, Clock, BarChart2, GitBranch,
   AlertTriangle, Layers, ChevronDown, Lightbulb, Timer, Activity,
-  Edit3, Check, X, TrendingDown,
+  Edit3, Check, X, TrendingDown, Filter,
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { useKommoData } from '../hooks/useKommoData';
@@ -22,11 +22,15 @@ import { LeadTrendChart } from '../components/dashboard/LeadTrendChart';
 import { InsightsPanel } from '../components/dashboard/InsightsPanel';
 import { LossReasonChart } from '../components/dashboard/LossReasonChart';
 import { EvolutionView } from '../components/dashboard/EvolutionView';
+import { MonthlyMRRChart } from '../components/dashboard/MonthlyMRRChart';
+import { ContractHistogram } from '../components/dashboard/ContractHistogram';
+import { PipelineForecast } from '../components/dashboard/PipelineForecast';
 import { DashboardSkeleton } from '../components/ui/Skeleton';
 import {
   computeKPIs, computeStageMetrics, computeUserMetrics,
   computeBottlenecks, computeStageTimeMetrics, computeLeadTrend,
   generateInsights, computeLossReasonAnalysis,
+  computeMonthlyMRR, computeContractHistogram, computePipelineForecast,
 } from '../utils/analytics';
 import { formatCurrency, formatNumber, formatPercent, formatDays, formatRelative } from '../utils/formatters';
 import { clientsApi } from '../services/api';
@@ -141,6 +145,8 @@ export function DashboardPage() {
   const [pipelineMenuOpen, setPipelineMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<Tab>('overview');
   const [dateRange, setDateRange] = useState<DateRange>(EMPTY_DATE);
+  const [responsibleFilter, setResponsibleFilter] = useState<number[]>([]);
+  const [userMenuOpen, setUserMenuOpen] = useState(false);
 
   useEffect(() => { if (id) fetch(); }, [id]);
 
@@ -167,7 +173,17 @@ export function DashboardPage() {
     );
   }, [data, dateRange]);
 
+  const pipelineLeads = useMemo(() => {
+    if (!selectedPipeline) return [];
+    let leads = filteredLeads.filter(l => l.pipeline_id === selectedPipeline.id);
+    if (responsibleFilter.length > 0) {
+      leads = leads.filter(l => responsibleFilter.includes(l.responsible_user_id));
+    }
+    return leads;
+  }, [selectedPipeline, filteredLeads, responsibleFilter]);
+
   const hasDateFilter = !!(dateRange.start || dateRange.end);
+  const hasUserFilter = responsibleFilter.length > 0;
 
   if (!client) return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-6">
@@ -176,21 +192,17 @@ export function DashboardPage() {
     </div>
   );
 
-  const pipelineLeads = selectedPipeline
-    ? filteredLeads.filter(l => l.pipeline_id === selectedPipeline.id)
-    : [];
-
   const kpis = selectedPipeline
     ? computeKPIs(pipelineLeads, data?.pipelines ?? [])
     : null;
 
-  const stages = selectedPipeline ? computeStageMetrics(filteredLeads, selectedPipeline) : [];
-  const stageTimeMetrics = selectedPipeline ? computeStageTimeMetrics(filteredLeads, selectedPipeline) : [];
+  const stages = selectedPipeline ? computeStageMetrics(pipelineLeads, selectedPipeline) : [];
+  const stageTimeMetrics = selectedPipeline ? computeStageTimeMetrics(pipelineLeads, selectedPipeline) : [];
   const userMetrics = selectedPipeline
     ? computeUserMetrics(pipelineLeads, data?.users ?? [], data?.pipelines ?? [])
     : [];
-  const bottlenecks = selectedPipeline ? computeBottlenecks(filteredLeads, selectedPipeline) : [];
-  const trend = data ? computeLeadTrend(filteredLeads, data.pipelines) : [];
+  const bottlenecks = selectedPipeline ? computeBottlenecks(pipelineLeads, selectedPipeline) : [];
+  const trend = data ? computeLeadTrend(pipelineLeads, data.pipelines) : [];
   const insights = selectedPipeline
     ? generateInsights(pipelineLeads, data?.pipelines ?? [], data?.users ?? [])
     : [];
@@ -198,6 +210,16 @@ export function DashboardPage() {
     ? computeLossReasonAnalysis(pipelineLeads, data.lossReasons ?? [], data.pipelines)
     : [];
   const lostTotal = lossStats.reduce((s, r) => s + r.count, 0);
+
+  const monthlyMRR = data && selectedPipeline
+    ? computeMonthlyMRR(pipelineLeads, data.pipelines)
+    : [];
+  const contractHistogram = data && selectedPipeline
+    ? computeContractHistogram(pipelineLeads, data.pipelines)
+    : [];
+  const pipelineForecast = data && selectedPipeline
+    ? computePipelineForecast(pipelineLeads, selectedPipeline, data.pipelines)
+    : [];
 
   const criticalInsights = insights.filter(i => i.type === 'critical').length;
   const warningInsights = insights.filter(i => i.type === 'warning').length;
@@ -232,10 +254,67 @@ export function DashboardPage() {
         <div className="flex items-center gap-3 flex-wrap pb-3 border-b border-border-default">
           <DateRangePicker value={dateRange} onChange={setDateRange} onClear={() => setDateRange(EMPTY_DATE)} />
 
+          {/* User filter */}
+          {data && data.users.length > 0 && (
+            <div className="relative">
+              <button
+                onClick={() => setUserMenuOpen(v => !v)}
+                className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border text-xs transition-all ${
+                  hasUserFilter
+                    ? 'bg-brand-red-subtle border-brand-red-border text-brand-red'
+                    : 'bg-bg-elevated border-border-subtle text-text-secondary hover:text-text-primary hover:border-border-strong'
+                }`}
+              >
+                <Filter size={11} />
+                {hasUserFilter ? `${responsibleFilter.length} usuário${responsibleFilter.length !== 1 ? 's' : ''}` : 'Usuário'}
+                <ChevronDown size={10} />
+              </button>
+              {userMenuOpen && (
+                <>
+                  <div className="fixed inset-0 z-10" onClick={() => setUserMenuOpen(false)} />
+                  <div className="absolute left-0 top-9 z-20 bg-bg-elevated border border-border-subtle rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.6)] py-1 min-w-[180px] max-h-64 overflow-y-auto">
+                    {data.users.map(u => {
+                      const checked = responsibleFilter.includes(u.id);
+                      return (
+                        <button
+                          key={u.id}
+                          onClick={() => setResponsibleFilter(prev =>
+                            checked ? prev.filter(x => x !== u.id) : [...prev, u.id]
+                          )}
+                          className={`flex items-center gap-2.5 w-full px-3 py-2 text-sm transition-colors ${
+                            checked
+                              ? 'text-brand-red bg-brand-red-subtle'
+                              : 'text-text-secondary hover:text-text-primary hover:bg-white/5'
+                          }`}
+                        >
+                          <span className={`w-3.5 h-3.5 rounded border flex items-center justify-center flex-shrink-0 ${checked ? 'bg-brand-red border-brand-red' : 'border-border-strong'}`}>
+                            {checked && <Check size={9} className="text-white" />}
+                          </span>
+                          <span className="truncate">{u.name}</span>
+                        </button>
+                      );
+                    })}
+                    {responsibleFilter.length > 0 && (
+                      <>
+                        <div className="border-t border-border-subtle my-1" />
+                        <button
+                          onClick={() => { setResponsibleFilter([]); setUserMenuOpen(false); }}
+                          className="w-full px-3 py-2 text-xs text-text-muted hover:text-text-primary hover:bg-white/5 text-left"
+                        >
+                          Limpar filtro
+                        </button>
+                      </>
+                    )}
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+
           <div className="ml-auto flex items-center gap-2">
-            {hasDateFilter && data && (
+            {(hasDateFilter || hasUserFilter) && data && (
               <span className="text-xs text-amber-400 bg-amber-950/40 border border-amber-800/40 px-2.5 py-1 rounded-full">
-                {filteredLeads.length} de {data.leads.length} leads
+                {pipelineLeads.length} leads filtrados
               </span>
             )}
 
@@ -399,7 +478,12 @@ export function DashboardPage() {
               </Section>
 
               {/* ── Kanban ───────────────────────────────────────────────── */}
-              <KanbanAnalysis stages={stages} pipelineName={selectedPipeline.name} />
+              <KanbanAnalysis
+                stages={stages}
+                pipelineName={selectedPipeline.name}
+                leads={pipelineLeads}
+                users={data.users}
+              />
 
               {/* ── Tempo médio por etapa ─────────────────────────────────── */}
               <Section
@@ -465,6 +549,36 @@ export function DashboardPage() {
                 </Section>
               </div>
 
+              {/* ── Análise de Receita ───────────────────────────────────── */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <Section title="Receita Mensal — Últimos 6 Meses" icon={TrendingUp}>
+                  <MonthlyMRRChart data={monthlyMRR} />
+                </Section>
+                <Section
+                  title="Distribuição de Contratos por Valor"
+                  icon={BarChart2}
+                  action={<span className="text-xs text-text-muted">{kpis.wonLeads} fechamentos</span>}
+                >
+                  <ContractHistogram data={contractHistogram} />
+                </Section>
+              </div>
+
+              {/* ── Pipeline Forecast ────────────────────────────────────── */}
+              <Section
+                title="Previsão de Receita — Pipeline em Aberto"
+                icon={Target}
+                accent="#f59e0b"
+                action={
+                  pipelineForecast.length > 0 ? (
+                    <span className="text-xs text-text-muted">
+                      {pipelineForecast.reduce((s, st) => s + st.activeCount, 0)} leads ativos
+                    </span>
+                  ) : undefined
+                }
+              >
+                <PipelineForecast stages={pipelineForecast} />
+              </Section>
+
               {/* ── Custom Fields ────────────────────────────────────────── */}
               {data.customFields.leads.length > 0 && (
                 <Section
@@ -485,7 +599,7 @@ export function DashboardPage() {
           {/* ══════════════ EVOLUÇÃO ════════════════════════════════════════ */}
           {activeTab === 'evolution' && (
             <EvolutionView
-              leads={filteredLeads}
+              leads={pipelineLeads}
               pipelines={data.pipelines}
               lossReasons={data.lossReasons ?? []}
               pipelineName={selectedPipeline.name}
