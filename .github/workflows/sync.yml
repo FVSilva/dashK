@@ -21,6 +21,9 @@ jobs:
       - name: Fetch Kommo data
         run: node scripts/sync.js
         env:
+          # Multi-client: set CLIENTS_JSON = [{"subdomain":"x","token":"y"},...]
+          # Single-client (legacy): set KOMMO_SUBDOMAIN + KOMMO_TOKEN
+          CLIENTS_JSON: ${{ secrets.CLIENTS_JSON }}
           KOMMO_SUBDOMAIN: ${{ secrets.KOMMO_SUBDOMAIN }}
           KOMMO_TOKEN: ${{ secrets.KOMMO_TOKEN }}
 

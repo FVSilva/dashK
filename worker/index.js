@@ -1,17 +1,21 @@
 /**
- * Cloudflare Worker — Kommo CORS Proxy
+ * Cloudflare Worker — Kommo CORS Proxy + Client Store
  *
- * Accepts:  POST /api/kommo/sync  { subdomain, token, stageNames? }
- * Returns:  KommoData JSON  (same shape as data.json / Express proxy)
+ * Routes:
+ *   POST /api/kommo/sync    { subdomain, token, stageNames? } → KommoData
+ *   GET  /api/clients                                          → Client[]
+ *   POST /api/clients       { id, name, subdomain, token }    → Client
+ *   DELETE /api/clients/:id                                    → { success }
  *
- * Deploy once, then set VITE_API_URL = https://<worker>.workers.dev
- * in GitHub Secrets → rebuild the app → done.
- * No per-client configuration ever needed again.
+ * Clients are stored in Cloudflare KV (CLIENTS namespace) so they persist
+ * across all browsers and devices — no localStorage needed.
+ *
+ * Requires KV binding: name = "CLIENTS" in wrangler.toml
  */
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin':  '*',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type',
 };
 
@@ -55,7 +59,6 @@ async function fetchAllLeads(subdomain, token) {
     all.push(...leads);
     if (leads.length < 250) break;
     page++;
-    // small delay between pages to be polite to the API
     await new Promise(r => setTimeout(r, 150));
   }
   return all;
@@ -107,11 +110,7 @@ function buildSyntheticPipelines(leads) {
 }
 
 async function fetchPipelines(subdomain, token) {
-  for (const [ep] of [
-    ['pipelines'],
-    ['account?with=pipelines'],
-    ['leads/pipelines'],
-  ]) {
+  for (const ep of ['pipelines', 'account?with=pipelines', 'leads/pipelines']) {
     try {
       const data = await kommoGet(subdomain, token, ep, {});
       const val  = data?._embedded?.pipelines;
@@ -163,7 +162,7 @@ async function fetchAccount(subdomain, token) {
   try { return await kommoGet(subdomain, token, 'account', {}); } catch { return null; }
 }
 
-// ── Main data fetch ───────────────────────────────────────────────────────────
+// ── Main Kommo data fetch ─────────────────────────────────────────────────────
 
 async function fetchKommoData(subdomain, token) {
   const [leads, users, rawPipelines, leadFields, account, lossReasons] = await Promise.all([
@@ -203,41 +202,90 @@ async function fetchKommoData(subdomain, token) {
   };
 }
 
+// ── Client store (Cloudflare KV) ──────────────────────────────────────────────
+
+const KV_KEY = 'clients';
+
+async function getClients(env) {
+  if (!env.CLIENTS) return [];
+  const raw = await env.CLIENTS.get(KV_KEY);
+  if (!raw) return [];
+  try { return JSON.parse(raw); } catch { return []; }
+}
+
+async function saveClients(env, clients) {
+  await env.CLIENTS.put(KV_KEY, JSON.stringify(clients));
+}
+
 // ── Worker entry point ────────────────────────────────────────────────────────
 
 export default {
-  async fetch(request) {
-    // Handle CORS preflight
+  async fetch(request, env) {
     if (request.method === 'OPTIONS') {
       return new Response(null, { headers: CORS_HEADERS });
     }
 
-    if (request.method !== 'POST') {
-      return json({ error: 'Method not allowed' }, 405);
+    const url      = new URL(request.url);
+    const pathname = url.pathname;
+
+    // ── GET /api/clients ─────────────────────────────────────────────────────
+    if (pathname === '/api/clients' && request.method === 'GET') {
+      const clients = await getClients(env);
+      return json(clients);
     }
 
-    let body;
-    try {
-      body = await request.json();
-    } catch {
-      return json({ error: 'Invalid JSON body' }, 400);
+    // ── POST /api/clients ────────────────────────────────────────────────────
+    if (pathname === '/api/clients' && request.method === 'POST') {
+      let body;
+      try { body = await request.json(); } catch { return json({ error: 'Invalid JSON' }, 400); }
+
+      const { name, subdomain, token } = body;
+      if (!name || !subdomain || !token) return json({ error: 'Missing name, subdomain or token' }, 400);
+
+      const clients = await getClients(env);
+      if (clients.find(c => c.subdomain === subdomain)) {
+        return json({ error: 'Client with this subdomain already exists' }, 409);
+      }
+
+      const client = {
+        id:        String(Date.now()),
+        name,
+        subdomain,
+        token,
+        createdAt: new Date().toISOString(),
+      };
+      clients.push(client);
+      await saveClients(env, clients);
+      return json(client, 201);
     }
 
-    const { subdomain, token } = body;
-
-    if (!subdomain || !token) {
-      return json({ error: 'Missing subdomain or token' }, 400);
+    // ── DELETE /api/clients/:id ──────────────────────────────────────────────
+    const deleteMatch = pathname.match(/^\/api\/clients\/(.+)$/);
+    if (deleteMatch && request.method === 'DELETE') {
+      const id      = deleteMatch[1];
+      const clients = await getClients(env);
+      const updated = clients.filter(c => c.id !== id);
+      await saveClients(env, updated);
+      return json({ success: true });
     }
 
-    try {
-      const data = await fetchKommoData(subdomain, token);
-      return json(data);
-    } catch (err) {
-      const status =
-        err.status === 401 ? 401 :
-        err.status === 403 ? 403 :
-        err.status === 404 ? 404 : 500;
-      return json({ error: err.message }, status);
+    // ── POST /api/kommo/sync ─────────────────────────────────────────────────
+    if (pathname === '/api/kommo/sync' && request.method === 'POST') {
+      let body;
+      try { body = await request.json(); } catch { return json({ error: 'Invalid JSON body' }, 400); }
+
+      const { subdomain, token } = body;
+      if (!subdomain || !token) return json({ error: 'Missing subdomain or token' }, 400);
+
+      try {
+        const data = await fetchKommoData(subdomain, token);
+        return json(data);
+      } catch (err) {
+        const status = err.status === 401 ? 401 : err.status === 403 ? 403 : err.status === 404 ? 404 : 500;
+        return json({ error: err.message }, status);
+      }
     }
+
+    return json({ error: 'Not found' }, 404);
   },
 };

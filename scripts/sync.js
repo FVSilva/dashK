@@ -1,28 +1,45 @@
 #!/usr/bin/env node
 /**
  * scripts/sync.js
- * Fetches all Kommo data and writes it to public/data.json.
+ * Fetches Kommo data for one or more clients and writes to public/data.json.
  * Run by GitHub Actions on a schedule — no CORS restriction on the server.
  *
- * Required env vars:
- *   KOMMO_SUBDOMAIN  — e.g. "mycompany"
- *   KOMMO_TOKEN      — long-lived Kommo API JWT token
+ * Client list (choose one):
+ *   CLIENTS_JSON  — JSON array: [{"subdomain":"x","token":"y","name":"Acme"},...]
+ *                   Use this to sync multiple clients from a single secret.
+ *
+ *   KOMMO_SUBDOMAIN + KOMMO_TOKEN  — legacy single-client env vars (still supported).
  */
 
 const fs   = require('fs');
 const path = require('path');
 
-const subdomain = process.env.KOMMO_SUBDOMAIN;
-const token     = process.env.KOMMO_TOKEN;
+// Build the list of clients to sync
+function resolveClients() {
+  // Multi-client via CLIENTS_JSON secret
+  if (process.env.CLIENTS_JSON) {
+    try {
+      const list = JSON.parse(process.env.CLIENTS_JSON);
+      if (Array.isArray(list) && list.length > 0) return list;
+    } catch (e) {
+      console.error('❌  CLIENTS_JSON is not valid JSON:', e.message);
+      process.exit(1);
+    }
+  }
+  // Legacy single-client secrets
+  const subdomain = process.env.KOMMO_SUBDOMAIN;
+  const token     = process.env.KOMMO_TOKEN;
+  if (subdomain && token) return [{ subdomain, token }];
 
-if (!subdomain || !token) {
-  console.error('❌  KOMMO_SUBDOMAIN and KOMMO_TOKEN must be set');
+  console.error('❌  Set CLIENTS_JSON or KOMMO_SUBDOMAIN + KOMMO_TOKEN');
   process.exit(1);
 }
 
+const clients = resolveClients();
+
 // ── HTTP helper (native fetch, Node 18+) ─────────────────────────────────────
 
-async function kommoGet(endpoint, params = {}) {
+async function kommoGet(subdomain, token, endpoint, params = {}) {
   const url = new URL(`https://${subdomain}.kommo.com/api/v4/${endpoint}`);
   Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, String(v)));
 
@@ -40,11 +57,11 @@ async function kommoGet(endpoint, params = {}) {
 
 // ── Leads (paginated) ─────────────────────────────────────────────────────────
 
-async function fetchAllLeads() {
+async function fetchAllLeads(subdomain, token) {
   const all = [];
   let page = 1;
   while (true) {
-    const data  = await kommoGet('leads', { page, limit: 250, with: 'loss_reason' });
+    const data  = await kommoGet(subdomain, token, 'leads', { page, limit: 250, with: 'loss_reason' });
     const leads = data?._embedded?.leads ?? [];
     all.push(...leads);
     if (leads.length < 250) break;
@@ -56,8 +73,8 @@ async function fetchAllLeads() {
 
 // ── Users ─────────────────────────────────────────────────────────────────────
 
-async function fetchAllUsers() {
-  const data = await kommoGet('users', { limit: 250 });
+async function fetchAllUsers(subdomain, token) {
+  const data = await kommoGet(subdomain, token, 'users', { limit: 250 });
   return data?._embedded?.users ?? [];
 }
 
@@ -99,15 +116,11 @@ function buildSyntheticPipelines(leads) {
   }));
 }
 
-async function fetchPipelines() {
-  for (const [ep, key] of [
-    ['pipelines', '_embedded.pipelines'],
-    ['account?with=pipelines', '_embedded.pipelines'],
-    ['leads/pipelines', '_embedded.pipelines'],
-  ]) {
+async function fetchPipelines(subdomain, token) {
+  for (const ep of ['pipelines', 'account?with=pipelines', 'leads/pipelines']) {
     try {
-      const data = await kommoGet(ep, {});
-      const val  = key.split('.').reduce((o, k) => o?.[k], data);
+      const data = await kommoGet(subdomain, token, ep, {});
+      const val  = data?._embedded?.pipelines;
       if (val?.length) return val;
     } catch {}
   }
@@ -116,9 +129,9 @@ async function fetchPipelines() {
 
 // ── Loss reasons ──────────────────────────────────────────────────────────────
 
-async function fetchLossReasons() {
+async function fetchLossReasons(subdomain, token) {
   try {
-    const d = await kommoGet('leads/loss_reasons', { limit: 250 });
+    const d = await kommoGet(subdomain, token, 'leads/loss_reasons', { limit: 250 });
     return d?._embedded?.loss_reasons ?? [];
   } catch { return []; }
 }
@@ -134,37 +147,37 @@ function extractLossReasonsFromLeads(leads) {
   return [...map.values()];
 }
 
-async function fetchLossReasonsByIds(ids) {
-  const results = await Promise.allSettled(ids.map(id => kommoGet(`leads/loss_reasons/${id}`, {})));
+async function fetchLossReasonsByIds(subdomain, token, ids) {
+  const results = await Promise.allSettled(ids.map(id => kommoGet(subdomain, token, `leads/loss_reasons/${id}`, {})));
   return results.filter(r => r.status === 'fulfilled' && r.value?.id)
     .map(r => ({ id: r.value.id, name: r.value.name, sort: 0 }));
 }
 
 // ── Custom fields + account ───────────────────────────────────────────────────
 
-async function fetchCustomFields(entity) {
+async function fetchCustomFields(subdomain, token, entity) {
   try {
-    const d = await kommoGet(`${entity}/custom_fields`, { limit: 250 });
+    const d = await kommoGet(subdomain, token, `${entity}/custom_fields`, { limit: 250 });
     return d?._embedded?.custom_fields ?? [];
   } catch { return []; }
 }
 
-async function fetchAccount() {
-  try { return await kommoGet('account', {}); } catch { return null; }
+async function fetchAccount(subdomain, token) {
+  try { return await kommoGet(subdomain, token, 'account', {}); } catch { return null; }
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────────
+// ── Sync one client ───────────────────────────────────────────────────────────
 
-async function main() {
-  console.log(`🔄  Syncing Kommo data for "${subdomain}"...`);
+async function syncClient(subdomain, token) {
+  console.log(`🔄  Syncing "${subdomain}"...`);
 
   const [leads, users, rawPipelines, leadFields, account, lossReasons] = await Promise.all([
-    fetchAllLeads(),
-    fetchAllUsers(),
-    fetchPipelines(),
-    fetchCustomFields('leads'),
-    fetchAccount(),
-    fetchLossReasons(),
+    fetchAllLeads(subdomain, token),
+    fetchAllUsers(subdomain, token),
+    fetchPipelines(subdomain, token),
+    fetchCustomFields(subdomain, token, 'leads'),
+    fetchAccount(subdomain, token),
+    fetchLossReasons(subdomain, token),
   ]);
 
   const pipelines = rawPipelines ?? buildSyntheticPipelines(leads);
@@ -178,11 +191,12 @@ async function main() {
     leads.filter(l => l.loss_reason_id && !knownIds.has(l.loss_reason_id)).map(l => l.loss_reason_id)
   )].slice(0, 20);
   if (missingIds.length > 0) {
-    const fetched = await fetchLossReasonsByIds(missingIds);
+    const fetched = await fetchLossReasonsByIds(subdomain, token, missingIds);
     fetched.forEach(r => { if (!merged.find(x => x.id === r.id)) merged.push(r); });
   }
 
-  const result = {
+  console.log(`✅  "${subdomain}" — ${leads.length} leads`);
+  return {
     leads,
     users,
     pipelines,
@@ -192,22 +206,34 @@ async function main() {
     syntheticPipelines: rawPipelines === null,
     lastSync: new Date().toISOString(),
   };
+}
 
-  // Write to public/data.json keyed by subdomain
+// ── Main ──────────────────────────────────────────────────────────────────────
+
+async function main() {
+  console.log(`📋  ${clients.length} client(s) to sync`);
+
   const outDir  = path.join(__dirname, '..', 'public');
   const outFile = path.join(outDir, 'data.json');
-
   fs.mkdirSync(outDir, { recursive: true });
 
-  // Merge with existing data (preserve other subdomains if any)
+  // Load existing data (preserve subdomains not being synced this run)
   let existing = {};
   if (fs.existsSync(outFile)) {
     try { existing = JSON.parse(fs.readFileSync(outFile, 'utf-8')); } catch {}
   }
-  existing[subdomain] = result;
+
+  // Sync clients sequentially to respect Kommo rate limits
+  for (const client of clients) {
+    try {
+      existing[client.subdomain] = await syncClient(client.subdomain, client.token);
+    } catch (err) {
+      console.error(`❌  "${client.subdomain}" failed: ${err.message}`);
+    }
+  }
 
   fs.writeFileSync(outFile, JSON.stringify(existing, null, 2));
-  console.log(`✅  Saved ${leads.length} leads → public/data.json`);
+  console.log(`💾  Saved → public/data.json`);
 }
 
 main().catch(err => {
