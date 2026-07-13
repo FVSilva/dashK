@@ -19256,59 +19256,6 @@
         }
       },
       {
-        "id": 78212225,
-        "name": "HOSPITAL MATA DA PRAIA LTDA",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106376664,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1783430709,
-        "updated_at": 1783433852,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "OS 1955"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78212225?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 114363931,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114363931?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 74839138,
         "name": "SANTA CASA DE MISERICORDIA DE MOGI DAS CRUZES",
         "price": 0,
@@ -24652,109 +24599,6 @@
         }
       },
       {
-        "id": 77549925,
-        "name": "HOSPITAL DE OLHOS DO RIO GRANDE DO NORTE LTDA",
-        "price": 10400,
-        "price_with_minor_units": 10400,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106488920,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1781175304,
-        "updated_at": 1783693734,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Não",
-                "enum_id": 735826246,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656406,
-            "field_name": "Deseja",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Recondicionar uma caneta",
-                "enum_id": 735826248,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "os 1981"
-              }
-            ]
-          },
-          {
-            "field_id": 3656408,
-            "field_name": "Origem",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Redes sociais",
-                "enum_id": 735826256,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3829608,
-            "field_name": "Nota",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "10"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77549925?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 113440339,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113440339?page=2&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 75809490,
         "name": "RETINA CENTER CLINICA OFTALMOLOGICA LTDA",
         "price": 0,
@@ -24915,7 +24759,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78299239?page=3&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78299239?page=2&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -24926,7 +24770,7 @@
               "id": 114483711,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114483711?page=3&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114483711?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -25007,7 +24851,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78072711?page=3&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78072711?page=2&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -25018,7 +24862,7 @@
               "id": 114209853,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114209853?page=3&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114209853?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -26318,47 +26162,6 @@
         }
       },
       {
-        "id": 74929290,
-        "name": "Hanna Portaria",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115775,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776360838,
-        "updated_at": 1783959408,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74929290?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 110945670,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110945670?page=3&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 75825296,
         "name": "COLICCHIO, SOUZA LIMA SERVICOS MEDICOS S/S",
         "price": 0,
@@ -26859,38 +26662,6 @@
         }
       },
       {
-        "id": 76475178,
-        "name": "GERENCIA",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 15073975,
-        "group_id": 0,
-        "status_id": 104542347,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 15073975,
-        "updated_by": 15073975,
-        "created_at": 1778605035,
-        "updated_at": 1783964520,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76475178?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 77393047,
         "name": "HRO - HOSPITAL DE REFERENCIA OFTALMOLOGICA LTDA",
         "price": 10000,
@@ -27191,6 +26962,47 @@
         }
       },
       {
+        "id": 74929290,
+        "name": "Hanna Portaria",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1776360838,
+        "updated_at": 1783973527,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74929290?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 110945670,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110945670?page=3&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
         "id": 76172082,
         "name": "CLINICA DE SAUDE OCULAR LTDA",
         "price": 0,
@@ -27201,9 +27013,9 @@
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 15073975,
+        "updated_by": 0,
         "created_at": 1778077710,
-        "updated_at": 1783971605,
+        "updated_at": 1783973568,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -27244,7 +27056,7 @@
         "created_by": 15073975,
         "updated_by": 15073975,
         "created_at": 1781892938,
-        "updated_at": 1783972615,
+        "updated_at": 1783974677,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -27274,9 +27086,9 @@
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
+        "updated_by": 15073975,
         "created_at": 1783968972,
-        "updated_at": 1783972674,
+        "updated_at": 1783974697,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -27293,6 +27105,194 @@
           "tags": [],
           "loss_reason": [],
           "companies": []
+        }
+      },
+      {
+        "id": 78212225,
+        "name": "HOSPITAL MATA DA PRAIA LTDA",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 106376664,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1783430709,
+        "updated_at": 1783975677,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "OS 1955"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78212225?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 114363931,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114363931?page=3&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 76475178,
+        "name": "GERENCIA",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 104542347,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 15073975,
+        "updated_by": 15073975,
+        "created_at": 1778605035,
+        "updated_at": 1783976212,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76475178?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 77549925,
+        "name": "HOSPITAL DE OLHOS DO RIO GRANDE DO NORTE LTDA",
+        "price": 10400,
+        "price_with_minor_units": 10400,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 106488920,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1781175304,
+        "updated_at": 1783976621,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Não",
+                "enum_id": 735826246,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656406,
+            "field_name": "Deseja",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Recondicionar uma caneta",
+                "enum_id": 735826248,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "os 1981"
+              }
+            ]
+          },
+          {
+            "field_id": 3656408,
+            "field_name": "Origem",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Redes sociais",
+                "enum_id": 735826256,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3829608,
+            "field_name": "Nota",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "10"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77549925?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 113440339,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113440339?page=3&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
         }
       }
     ],
@@ -28618,9 +28618,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1783972730,
+      "created_at": 1783976845,
       "created_by": 0,
-      "updated_at": 1783972730,
+      "updated_at": 1783976845,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -28726,6 +28726,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-07-13T19:58:53.046Z"
+    "lastSync": "2026-07-13T21:07:28.035Z"
   }
 }
