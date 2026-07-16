@@ -23452,38 +23452,6 @@
         }
       },
       {
-        "id": 75809454,
-        "name": "Lead #75809454",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115767,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1774461444,
-        "updated_at": 1783952194,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75809454?page=2&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 74893312,
         "name": "CLINICA DE OLHOS DE CURITIBA E INSTITUTO DE CORNEA E CATARATA S/S LTDA",
         "price": 8090,
@@ -24910,7 +24878,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77937585?page=3&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77937585?page=2&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -24921,7 +24889,7 @@
               "id": 114391435,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114391435?page=3&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114391435?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -27856,7 +27824,7 @@
         "created_by": 0,
         "updated_by": 0,
         "created_at": 1782920225,
-        "updated_at": 1784210154,
+        "updated_at": 1784211909,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -27944,9 +27912,9 @@
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 15073975,
+        "updated_by": 0,
         "created_at": 1783009041,
-        "updated_at": 1784210185,
+        "updated_at": 1784215719,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -29348,9 +29316,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1784210212,
+      "created_at": 1784216494,
       "created_by": 0,
-      "updated_at": 1784210212,
+      "updated_at": 1784216494,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -29456,6 +29424,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-07-16T13:56:54.760Z"
+    "lastSync": "2026-07-16T15:41:36.198Z"
   }
 }
