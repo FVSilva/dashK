@@ -27253,98 +27253,6 @@
         }
       },
       {
-        "id": 78293727,
-        "name": "LEANDRO",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1783688694,
-        "updated_at": 1784649356,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Não",
-                "enum_id": 735826246,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656406,
-            "field_name": "Deseja",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Recondicionar uma caneta",
-                "enum_id": 735826248,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "OS 1988"
-              }
-            ]
-          },
-          {
-            "field_id": 3656408,
-            "field_name": "Origem",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Google",
-                "enum_id": 735826254,
-                "enum_code": null
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78293727?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 114480507,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114480507?page=3&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 78479547,
         "name": "Lead #78479547",
         "price": 0,
@@ -27620,798 +27528,6 @@
         }
       },
       {
-        "id": 78496229,
-        "name": "Lead #78496229",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784581217,
-        "updated_at": 1784664088,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3613246,
-            "field_name": "utm_source",
-            "field_code": "UTM_SOURCE",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3613242,
-            "field_name": "utm_medium",
-            "field_code": "UTM_MEDIUM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          },
-          {
-            "field_id": 3613244,
-            "field_name": "utm_campaign",
-            "field_code": "UTM_CAMPAIGN",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3613240,
-            "field_name": "utm_content",
-            "field_code": "UTM_CONTENT",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "remarketing"
-              }
-            ]
-          },
-          {
-            "field_id": 3613248,
-            "field_name": "utm_term",
-            "field_code": "UTM_TERM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "caneta_faco"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496229?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78496861,
-        "name": "Lead #78496861",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784581388,
-        "updated_at": 1784664257,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3613246,
-            "field_name": "utm_source",
-            "field_code": "UTM_SOURCE",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3613242,
-            "field_name": "utm_medium",
-            "field_code": "UTM_MEDIUM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          },
-          {
-            "field_id": 3613244,
-            "field_name": "utm_campaign",
-            "field_code": "UTM_CAMPAIGN",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3613240,
-            "field_name": "utm_content",
-            "field_code": "UTM_CONTENT",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "remarketing"
-              }
-            ]
-          },
-          {
-            "field_id": 3613248,
-            "field_name": "utm_term",
-            "field_code": "UTM_TERM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "caneta_faco"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496861?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78496867,
-        "name": "Lead #78496867",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784581406,
-        "updated_at": 1784664276,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3613246,
-            "field_name": "utm_source",
-            "field_code": "UTM_SOURCE",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3613242,
-            "field_name": "utm_medium",
-            "field_code": "UTM_MEDIUM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          },
-          {
-            "field_id": 3613244,
-            "field_name": "utm_campaign",
-            "field_code": "UTM_CAMPAIGN",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3613240,
-            "field_name": "utm_content",
-            "field_code": "UTM_CONTENT",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "remarketing"
-              }
-            ]
-          },
-          {
-            "field_id": 3613248,
-            "field_name": "utm_term",
-            "field_code": "UTM_TERM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "caneta_faco"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496867?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78496871,
-        "name": "Lead #78496871",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784581420,
-        "updated_at": 1784664285,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3613246,
-            "field_name": "utm_source",
-            "field_code": "UTM_SOURCE",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3613242,
-            "field_name": "utm_medium",
-            "field_code": "UTM_MEDIUM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          },
-          {
-            "field_id": 3613244,
-            "field_name": "utm_campaign",
-            "field_code": "UTM_CAMPAIGN",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3613240,
-            "field_name": "utm_content",
-            "field_code": "UTM_CONTENT",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "remarketing"
-              }
-            ]
-          },
-          {
-            "field_id": 3613248,
-            "field_name": "utm_term",
-            "field_code": "UTM_TERM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "caneta_faco"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496871?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78496883,
-        "name": "Lead #78496883",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784581456,
-        "updated_at": 1784664321,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3613240,
-            "field_name": "utm_content",
-            "field_code": "UTM_CONTENT",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "remarketing"
-              }
-            ]
-          },
-          {
-            "field_id": 3613248,
-            "field_name": "utm_term",
-            "field_code": "UTM_TERM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "caneta_faco"
-              }
-            ]
-          },
-          {
-            "field_id": 3613246,
-            "field_name": "utm_source",
-            "field_code": "UTM_SOURCE",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3613242,
-            "field_name": "utm_medium",
-            "field_code": "UTM_MEDIUM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          },
-          {
-            "field_id": 3613244,
-            "field_name": "utm_campaign",
-            "field_code": "UTM_CAMPAIGN",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496883?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78496887,
-        "name": "Lead #78496887",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784581476,
-        "updated_at": 1784664340,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3613248,
-            "field_name": "utm_term",
-            "field_code": "UTM_TERM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "caneta_faco"
-              }
-            ]
-          },
-          {
-            "field_id": 3613246,
-            "field_name": "utm_source",
-            "field_code": "UTM_SOURCE",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3613242,
-            "field_name": "utm_medium",
-            "field_code": "UTM_MEDIUM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          },
-          {
-            "field_id": 3613244,
-            "field_name": "utm_campaign",
-            "field_code": "UTM_CAMPAIGN",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3613240,
-            "field_name": "utm_content",
-            "field_code": "UTM_CONTENT",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "remarketing"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496887?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78496901,
-        "name": "Lead #78496901",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784581503,
-        "updated_at": 1784664370,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3613244,
-            "field_name": "utm_campaign",
-            "field_code": "UTM_CAMPAIGN",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3613240,
-            "field_name": "utm_content",
-            "field_code": "UTM_CONTENT",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "remarketing"
-              }
-            ]
-          },
-          {
-            "field_id": 3613248,
-            "field_name": "utm_term",
-            "field_code": "UTM_TERM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "caneta_faco"
-              }
-            ]
-          },
-          {
-            "field_id": 3613246,
-            "field_name": "utm_source",
-            "field_code": "UTM_SOURCE",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3613242,
-            "field_name": "utm_medium",
-            "field_code": "UTM_MEDIUM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496901?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78496903,
-        "name": "Lead #78496903",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784581506,
-        "updated_at": 1784664373,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3613248,
-            "field_name": "utm_term",
-            "field_code": "UTM_TERM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "caneta_faco"
-              }
-            ]
-          },
-          {
-            "field_id": 3613246,
-            "field_name": "utm_source",
-            "field_code": "UTM_SOURCE",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3613242,
-            "field_name": "utm_medium",
-            "field_code": "UTM_MEDIUM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          },
-          {
-            "field_id": 3613244,
-            "field_name": "utm_campaign",
-            "field_code": "UTM_CAMPAIGN",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3613240,
-            "field_name": "utm_content",
-            "field_code": "UTM_CONTENT",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "remarketing"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496903?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78496923,
-        "name": "Lead #78496923",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784581551,
-        "updated_at": 1784664416,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3613246,
-            "field_name": "utm_source",
-            "field_code": "UTM_SOURCE",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3613242,
-            "field_name": "utm_medium",
-            "field_code": "UTM_MEDIUM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          },
-          {
-            "field_id": 3613244,
-            "field_name": "utm_campaign",
-            "field_code": "UTM_CAMPAIGN",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3613240,
-            "field_name": "utm_content",
-            "field_code": "UTM_CONTENT",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "remarketing"
-              }
-            ]
-          },
-          {
-            "field_id": 3613248,
-            "field_name": "utm_term",
-            "field_code": "UTM_TERM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "caneta_faco"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496923?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 78274801,
         "name": "JULIANA ALMENARA",
         "price": 7400,
@@ -28460,94 +27576,6 @@
         "_links": {
           "self": {
             "href": "https://contatocyrculos.kommo.com/api/v4/leads/78274801?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78497317,
-        "name": "Lead #78497317",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784583213,
-        "updated_at": 1784666082,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3613244,
-            "field_name": "utm_campaign",
-            "field_code": "UTM_CAMPAIGN",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3613240,
-            "field_name": "utm_content",
-            "field_code": "UTM_CONTENT",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "remarketing"
-              }
-            ]
-          },
-          {
-            "field_id": 3613248,
-            "field_name": "utm_term",
-            "field_code": "UTM_TERM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "caneta_faco"
-              }
-            ]
-          },
-          {
-            "field_id": 3613246,
-            "field_name": "utm_source",
-            "field_code": "UTM_SOURCE",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3613242,
-            "field_name": "utm_medium",
-            "field_code": "UTM_MEDIUM",
-            "field_type": "tracking_data",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78497317?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -29841,6 +28869,978 @@
               }
             }
           ]
+        }
+      },
+      {
+        "id": 78496229,
+        "name": "Lead #78496229",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784581217,
+        "updated_at": 1784750547,
+        "closed_at": 1784750547,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3613246,
+            "field_name": "utm_source",
+            "field_code": "UTM_SOURCE",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3613242,
+            "field_name": "utm_medium",
+            "field_code": "UTM_MEDIUM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          },
+          {
+            "field_id": 3613244,
+            "field_name": "utm_campaign",
+            "field_code": "UTM_CAMPAIGN",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3613240,
+            "field_name": "utm_content",
+            "field_code": "UTM_CONTENT",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "remarketing"
+              }
+            ]
+          },
+          {
+            "field_id": 3613248,
+            "field_name": "utm_term",
+            "field_code": "UTM_TERM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "caneta_faco"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496229?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78496861,
+        "name": "Lead #78496861",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784581388,
+        "updated_at": 1784750717,
+        "closed_at": 1784750717,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3613246,
+            "field_name": "utm_source",
+            "field_code": "UTM_SOURCE",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3613242,
+            "field_name": "utm_medium",
+            "field_code": "UTM_MEDIUM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          },
+          {
+            "field_id": 3613244,
+            "field_name": "utm_campaign",
+            "field_code": "UTM_CAMPAIGN",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3613240,
+            "field_name": "utm_content",
+            "field_code": "UTM_CONTENT",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "remarketing"
+              }
+            ]
+          },
+          {
+            "field_id": 3613248,
+            "field_name": "utm_term",
+            "field_code": "UTM_TERM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "caneta_faco"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496861?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78496867,
+        "name": "Lead #78496867",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784581406,
+        "updated_at": 1784750731,
+        "closed_at": 1784750731,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3613246,
+            "field_name": "utm_source",
+            "field_code": "UTM_SOURCE",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3613242,
+            "field_name": "utm_medium",
+            "field_code": "UTM_MEDIUM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          },
+          {
+            "field_id": 3613244,
+            "field_name": "utm_campaign",
+            "field_code": "UTM_CAMPAIGN",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3613240,
+            "field_name": "utm_content",
+            "field_code": "UTM_CONTENT",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "remarketing"
+              }
+            ]
+          },
+          {
+            "field_id": 3613248,
+            "field_name": "utm_term",
+            "field_code": "UTM_TERM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "caneta_faco"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496867?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78496871,
+        "name": "Lead #78496871",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784581420,
+        "updated_at": 1784750745,
+        "closed_at": 1784750745,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3613246,
+            "field_name": "utm_source",
+            "field_code": "UTM_SOURCE",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3613242,
+            "field_name": "utm_medium",
+            "field_code": "UTM_MEDIUM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          },
+          {
+            "field_id": 3613244,
+            "field_name": "utm_campaign",
+            "field_code": "UTM_CAMPAIGN",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3613240,
+            "field_name": "utm_content",
+            "field_code": "UTM_CONTENT",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "remarketing"
+              }
+            ]
+          },
+          {
+            "field_id": 3613248,
+            "field_name": "utm_term",
+            "field_code": "UTM_TERM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "caneta_faco"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496871?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78496883,
+        "name": "Lead #78496883",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784581456,
+        "updated_at": 1784750783,
+        "closed_at": 1784750783,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3613240,
+            "field_name": "utm_content",
+            "field_code": "UTM_CONTENT",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "remarketing"
+              }
+            ]
+          },
+          {
+            "field_id": 3613248,
+            "field_name": "utm_term",
+            "field_code": "UTM_TERM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "caneta_faco"
+              }
+            ]
+          },
+          {
+            "field_id": 3613246,
+            "field_name": "utm_source",
+            "field_code": "UTM_SOURCE",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3613242,
+            "field_name": "utm_medium",
+            "field_code": "UTM_MEDIUM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          },
+          {
+            "field_id": 3613244,
+            "field_name": "utm_campaign",
+            "field_code": "UTM_CAMPAIGN",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496883?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78496887,
+        "name": "Lead #78496887",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784581476,
+        "updated_at": 1784750799,
+        "closed_at": 1784750799,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3613248,
+            "field_name": "utm_term",
+            "field_code": "UTM_TERM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "caneta_faco"
+              }
+            ]
+          },
+          {
+            "field_id": 3613246,
+            "field_name": "utm_source",
+            "field_code": "UTM_SOURCE",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3613242,
+            "field_name": "utm_medium",
+            "field_code": "UTM_MEDIUM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          },
+          {
+            "field_id": 3613244,
+            "field_name": "utm_campaign",
+            "field_code": "UTM_CAMPAIGN",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3613240,
+            "field_name": "utm_content",
+            "field_code": "UTM_CONTENT",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "remarketing"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496887?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78496901,
+        "name": "Lead #78496901",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784581503,
+        "updated_at": 1784750829,
+        "closed_at": 1784750829,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3613244,
+            "field_name": "utm_campaign",
+            "field_code": "UTM_CAMPAIGN",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3613240,
+            "field_name": "utm_content",
+            "field_code": "UTM_CONTENT",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "remarketing"
+              }
+            ]
+          },
+          {
+            "field_id": 3613248,
+            "field_name": "utm_term",
+            "field_code": "UTM_TERM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "caneta_faco"
+              }
+            ]
+          },
+          {
+            "field_id": 3613246,
+            "field_name": "utm_source",
+            "field_code": "UTM_SOURCE",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3613242,
+            "field_name": "utm_medium",
+            "field_code": "UTM_MEDIUM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496901?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78496903,
+        "name": "Lead #78496903",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784581506,
+        "updated_at": 1784750835,
+        "closed_at": 1784750835,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3613248,
+            "field_name": "utm_term",
+            "field_code": "UTM_TERM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "caneta_faco"
+              }
+            ]
+          },
+          {
+            "field_id": 3613246,
+            "field_name": "utm_source",
+            "field_code": "UTM_SOURCE",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3613242,
+            "field_name": "utm_medium",
+            "field_code": "UTM_MEDIUM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          },
+          {
+            "field_id": 3613244,
+            "field_name": "utm_campaign",
+            "field_code": "UTM_CAMPAIGN",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3613240,
+            "field_name": "utm_content",
+            "field_code": "UTM_CONTENT",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "remarketing"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496903?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78496923,
+        "name": "Lead #78496923",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784581551,
+        "updated_at": 1784750876,
+        "closed_at": 1784750876,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3613246,
+            "field_name": "utm_source",
+            "field_code": "UTM_SOURCE",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3613242,
+            "field_name": "utm_medium",
+            "field_code": "UTM_MEDIUM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          },
+          {
+            "field_id": 3613244,
+            "field_name": "utm_campaign",
+            "field_code": "UTM_CAMPAIGN",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3613240,
+            "field_name": "utm_content",
+            "field_code": "UTM_CONTENT",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "remarketing"
+              }
+            ]
+          },
+          {
+            "field_id": 3613248,
+            "field_name": "utm_term",
+            "field_code": "UTM_TERM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "caneta_faco"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78496923?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78293727,
+        "name": "LEANDRO",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104850943,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1783688694,
+        "updated_at": 1784751705,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Não",
+                "enum_id": 735826246,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656406,
+            "field_name": "Deseja",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Recondicionar uma caneta",
+                "enum_id": 735826248,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "OS 1988"
+              }
+            ]
+          },
+          {
+            "field_id": 3656408,
+            "field_name": "Origem",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Google",
+                "enum_id": 735826254,
+                "enum_code": null
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78293727?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 114480507,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114480507?page=3&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 78497317,
+        "name": "Lead #78497317",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784583213,
+        "updated_at": 1784752542,
+        "closed_at": 1784752542,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3613244,
+            "field_name": "utm_campaign",
+            "field_code": "UTM_CAMPAIGN",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3613240,
+            "field_name": "utm_content",
+            "field_code": "UTM_CONTENT",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "remarketing"
+              }
+            ]
+          },
+          {
+            "field_id": 3613248,
+            "field_name": "utm_term",
+            "field_code": "UTM_TERM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "caneta_faco"
+              }
+            ]
+          },
+          {
+            "field_id": 3613246,
+            "field_name": "utm_source",
+            "field_code": "UTM_SOURCE",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3613242,
+            "field_name": "utm_medium",
+            "field_code": "UTM_MEDIUM",
+            "field_type": "tracking_data",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78497317?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
         }
       }
     ],
@@ -31166,9 +31166,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1784748217,
+      "created_at": 1784752723,
       "created_by": 0,
-      "updated_at": 1784748217,
+      "updated_at": 1784752723,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -31274,6 +31274,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-07-22T19:23:39.955Z"
+    "lastSync": "2026-07-22T20:38:46.219Z"
   }
 }
