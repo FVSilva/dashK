@@ -29709,38 +29709,6 @@
         }
       },
       {
-        "id": 78574775,
-        "name": "Lead #78574775",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784896255,
-        "updated_at": 1784899863,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78574775?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 77985117,
         "name": "RETINA CENTER LTDA",
         "price": 44400,
@@ -30162,6 +30130,38 @@
               }
             }
           ]
+        }
+      },
+      {
+        "id": 78574775,
+        "name": "Lead #78574775",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104850943,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1784896255,
+        "updated_at": 1784979123,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78574775?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
         }
       }
     ],
@@ -31487,9 +31487,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1784976757,
+      "created_at": 1784981030,
       "created_by": 0,
-      "updated_at": 1784976757,
+      "updated_at": 1784981030,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -31595,6 +31595,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-07-25T10:52:40.495Z"
+    "lastSync": "2026-07-25T12:03:51.910Z"
   }
 }
