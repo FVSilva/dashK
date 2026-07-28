@@ -2391,47 +2391,6 @@
         }
       },
       {
-        "id": 74940424,
-        "name": "PREVENT SENIOR ATENDIMENTO A SAUDE LTDA.",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104542347,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776376485,
-        "updated_at": 1778779795,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74940424?page=1&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 111877106,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111877106?page=1&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 74916316,
         "name": "CENTRO PARAIBANO DE CLINICA E CIRURGIA DE OLHOS LTDA",
         "price": 0,
@@ -10880,7 +10839,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76857259?page=2&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76857259?page=1&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -10894,7 +10853,7 @@
               "updated_at": 1779296207,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/loss_reasons/36927192?page=2&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/loss_reasons/36927192?page=1&limit=250&with=loss_reason"
                 }
               }
             }
@@ -10904,7 +10863,7 @@
               "id": 112528653,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/112528653?page=2&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/112528653?page=1&limit=250&with=loss_reason"
                 }
               }
             }
@@ -25097,7 +25056,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77813265?page=3&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77813265?page=2&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -25108,7 +25067,7 @@
               "id": 113840329,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113840329?page=3&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113840329?page=2&limit=250&with=loss_reason"
                 }
               }
             }
@@ -30280,6 +30239,79 @@
           "loss_reason": [],
           "companies": []
         }
+      },
+      {
+        "id": 78644189,
+        "name": "Lead #78644189",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1785234701,
+        "updated_at": 1785238409,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78644189?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 74940424,
+        "name": "PREVENT SENIOR ATENDIMENTO A SAUDE LTDA.",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115767,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1776376485,
+        "updated_at": 1785240980,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74940424?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 111877106,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111877106?page=3&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
       }
     ],
     "users": [
@@ -31604,9 +31636,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1785233274,
+      "created_at": 1785241263,
       "created_by": 0,
-      "updated_at": 1785233274,
+      "updated_at": 1785241263,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -31712,6 +31744,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-07-28T10:07:56.816Z"
+    "lastSync": "2026-07-28T12:21:06.213Z"
   }
 }
