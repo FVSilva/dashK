@@ -27528,38 +27528,6 @@
         }
       },
       {
-        "id": 78561991,
-        "name": "Lead #78561991",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115779,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1784826285,
-        "updated_at": 1784896155,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78561991?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 78434701,
         "name": "Lead #78434701",
         "price": 0,
@@ -28393,83 +28361,6 @@
               }
             }
           ]
-        }
-      },
-      {
-        "id": 77923363,
-        "name": "Stephen Torres",
-        "price": 8090,
-        "price_with_minor_units": 8090,
-        "responsible_user_id": 15073975,
-        "group_id": 0,
-        "status_id": 104521143,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1782504578,
-        "updated_at": 1785160772,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3829714,
-            "field_name": "UTM SOURCE",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3829718,
-            "field_name": "UTM CAMPAIGN",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3829716,
-            "field_name": "UTM MEDIUM",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "paid_social"
-              }
-            ]
-          },
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "OS 1963"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77923363?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
         }
       },
       {
@@ -29335,47 +29226,6 @@
               "_links": {
                 "self": {
                   "href": "https://contatocyrculos.kommo.com/api/v4/companies/114209853?page=3&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 74929290,
-        "name": "Hanna Portaria",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115775,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1776360838,
-        "updated_at": 1785181354,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74929290?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 110945670,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110945670?page=3&limit=250&with=loss_reason"
                 }
               }
             }
@@ -30336,71 +30186,6 @@
         }
       },
       {
-        "id": 78533063,
-        "name": "Lead #78533063",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115767,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1784724444,
-        "updated_at": 1785327635,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Sim",
-                "enum_id": 735826244,
-                "enum_code": null
-              }
-            ]
-          },
-          {
-            "field_id": 3656406,
-            "field_name": "Deseja",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Recondicionar uma caneta",
-                "enum_id": 735826248,
-                "enum_code": null
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78533063?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [
-            {
-              "id": 2117086,
-              "name": "cliente_base",
-              "color": null
-            }
-          ],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 76128468,
         "name": "Lead #76128468",
         "price": 0,
@@ -30638,6 +30423,115 @@
         }
       },
       {
+        "id": 78671599,
+        "name": "Lead #78671599",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1785339956,
+        "updated_at": 1785345565,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78671599?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 77923363,
+        "name": "Stephen Torres",
+        "price": 8090,
+        "price_with_minor_units": 8090,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 104521143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1782504578,
+        "updated_at": 1785345741,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3829714,
+            "field_name": "UTM SOURCE",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3829718,
+            "field_name": "UTM CAMPAIGN",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3829716,
+            "field_name": "UTM MEDIUM",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "paid_social"
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "OS 1963"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77923363?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
         "id": 75678214,
         "name": "Recepção",
         "price": 0,
@@ -30650,7 +30544,7 @@
         "created_by": 0,
         "updated_by": 0,
         "created_at": 1777461572,
-        "updated_at": 1785336873,
+        "updated_at": 1785346080,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -30679,8 +30573,8 @@
         }
       },
       {
-        "id": 78671599,
-        "name": "Lead #78671599",
+        "id": 78533063,
+        "name": "Lead #78533063",
         "price": 0,
         "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
@@ -30689,9 +30583,74 @@
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1785339956,
-        "updated_at": 1785339962,
+        "updated_by": 15073975,
+        "created_at": 1784724444,
+        "updated_at": 1785346406,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Sim",
+                "enum_id": 735826244,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656406,
+            "field_name": "Deseja",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Recondicionar uma caneta",
+                "enum_id": 735826248,
+                "enum_code": null
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78533063?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [
+            {
+              "id": 2117086,
+              "name": "cliente_base",
+              "color": null
+            }
+          ],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78561991,
+        "name": "Lead #78561991",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115779,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1784826285,
+        "updated_at": 1785346974,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -30701,13 +30660,54 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78671599?page=3&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78561991?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
           "tags": [],
           "loss_reason": [],
           "companies": []
+        }
+      },
+      {
+        "id": 74929290,
+        "name": "Hanna Portaria",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1776360838,
+        "updated_at": 1785347198,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74929290?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 110945670,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110945670?page=3&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
         }
       }
     ],
@@ -30893,7 +30893,7 @@
           "statuses": [
             {
               "id": 104115763,
-              "name": "Leads de entrada",
+              "name": "Etapa de leads de entrada",
               "sort": 10,
               "is_editable": false,
               "pipeline_id": 13495811,
@@ -32033,9 +32033,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1785342187,
+      "created_at": 1785347288,
       "created_by": 0,
-      "updated_at": 1785342187,
+      "updated_at": 1785347288,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -32141,6 +32141,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-07-29T16:23:07.741Z"
+    "lastSync": "2026-07-29T17:48:12.473Z"
   }
 }
