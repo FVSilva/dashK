@@ -31447,8 +31447,8 @@
         }
       },
       {
-        "id": 78737041,
-        "name": "Lead #78737041",
+        "id": 78737553,
+        "name": "Lead #78737553",
         "price": 0,
         "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
@@ -31458,8 +31458,67 @@
         "loss_reason_id": null,
         "created_by": 0,
         "updated_by": 0,
+        "created_at": 1785610594,
+        "updated_at": 1785610616,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Não",
+                "enum_id": 735826246,
+                "enum_code": null
+              }
+            ]
+          },
+          {
+            "field_id": 3656406,
+            "field_name": "Deseja",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Recondicionar uma caneta",
+                "enum_id": 735826248,
+                "enum_code": null
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78737553?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78737041,
+        "name": "Lead #78737041",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104850943,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
         "created_at": 1785607762,
-        "updated_at": 1785607767,
+        "updated_at": 1785611368,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -32801,9 +32860,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1785608931,
+      "created_at": 1785613554,
       "created_by": 0,
-      "updated_at": 1785608931,
+      "updated_at": 1785613554,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -32909,6 +32968,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-08-01T18:28:54.435Z"
+    "lastSync": "2026-08-01T19:45:56.713Z"
   }
 }
