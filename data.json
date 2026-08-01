@@ -30066,38 +30066,6 @@
         }
       },
       {
-        "id": 78684961,
-        "name": "Lead #78684961",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1785407771,
-        "updated_at": 1785490637,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78684961?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 77937585,
         "name": "OCULARE OFTALMOLOGIA LTDA",
         "price": 8090,
@@ -31236,8 +31204,8 @@
         }
       },
       {
-        "id": 78727533,
-        "name": "Lead #78727533",
+        "id": 78728121,
+        "name": "Lead #78728121",
         "price": 0,
         "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
@@ -31247,8 +31215,72 @@
         "loss_reason_id": null,
         "created_by": 0,
         "updated_by": 0,
+        "created_at": 1785551844,
+        "updated_at": 1785555449,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78728121?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78684961,
+        "name": "Lead #78684961",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1785407771,
+        "updated_at": 1785577096,
+        "closed_at": 1785577096,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78684961?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78727533,
+        "name": "Lead #78727533",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
         "created_at": 1785546848,
-        "updated_at": 1785550670,
+        "updated_at": 1785581437,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -31310,38 +31342,6 @@
         "_links": {
           "self": {
             "href": "https://contatocyrculos.kommo.com/api/v4/leads/78727533?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78728121,
-        "name": "Lead #78728121",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104850943,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1785551844,
-        "updated_at": 1785555449,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78728121?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -32673,9 +32673,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1785576684,
+      "created_at": 1785583031,
       "created_by": 0,
-      "updated_at": 1785576684,
+      "updated_at": 1785583031,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -32781,6 +32781,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-08-01T09:31:26.733Z"
+    "lastSync": "2026-08-01T11:17:13.738Z"
   }
 }
