@@ -35373,174 +35373,396 @@
     "pipelines": [
       {
         "id": 13495811,
-        "name": "Pipeline 1",
-        "sort": 10,
+        "name": "Funil de vendas",
+        "sort": 1,
         "is_main": true,
+        "is_unsorted_on": true,
         "is_archive": false,
+        "account_id": 36309147,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811"
+          }
+        },
         "_embedded": {
           "statuses": [
             {
-              "id": 143,
-              "name": "Perdido",
-              "sort": 9999,
-              "color": "#6b7280",
-              "type": 143,
-              "pipeline_id": 13495811
+              "id": 104115763,
+              "name": "Etapa de leads de entrada",
+              "sort": 10,
+              "is_editable": false,
+              "pipeline_id": 13495811,
+              "color": "#c1c1c1",
+              "type": 1,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/104115763"
+                }
+              }
             },
             {
               "id": 104542347,
-              "name": "Etapa 1",
-              "sort": 10,
-              "color": "#E5173F",
-              "type": 0,
-              "pipeline_id": 13495811
-            },
-            {
-              "id": 142,
-              "name": "Ganho",
-              "sort": 9000,
-              "color": "#22c55e",
-              "type": 142,
-              "pipeline_id": 13495811
-            },
-            {
-              "id": 104115779,
-              "name": "Etapa 2",
+              "name": "Base lead",
               "sort": 20,
-              "color": "#E5173F",
+              "is_editable": true,
+              "pipeline_id": 13495811,
+              "color": "#99ccff",
               "type": 0,
-              "pipeline_id": 13495811
-            },
-            {
-              "id": 104115775,
-              "name": "Etapa 3",
-              "sort": 30,
-              "color": "#E5173F",
-              "type": 0,
-              "pipeline_id": 13495811
-            },
-            {
-              "id": 106376664,
-              "name": "Etapa 4",
-              "sort": 40,
-              "color": "#E5173F",
-              "type": 0,
-              "pipeline_id": 13495811
-            },
-            {
-              "id": 105398163,
-              "name": "Etapa 5",
-              "sort": 50,
-              "color": "#E5173F",
-              "type": 0,
-              "pipeline_id": 13495811
-            },
-            {
-              "id": 104850943,
-              "name": "Etapa 6",
-              "sort": 60,
-              "color": "#E5173F",
-              "type": 0,
-              "pipeline_id": 13495811
-            },
-            {
-              "id": 104521139,
-              "name": "Etapa 7",
-              "sort": 70,
-              "color": "#E5173F",
-              "type": 0,
-              "pipeline_id": 13495811
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/104542347"
+                }
+              }
             },
             {
               "id": 104115767,
-              "name": "Etapa 8",
-              "sort": 80,
-              "color": "#E5173F",
+              "name": "Conexão",
+              "sort": 30,
+              "is_editable": true,
+              "pipeline_id": 13495811,
+              "color": "#99ccff",
               "type": 0,
-              "pipeline_id": 13495811
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/104115767"
+                }
+              }
+            },
+            {
+              "id": 104115775,
+              "name": "Em atendimento",
+              "sort": 40,
+              "is_editable": true,
+              "pipeline_id": 13495811,
+              "color": "#ffcc66",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/104115775"
+                }
+              }
+            },
+            {
+              "id": 106376664,
+              "name": "Atendimento/Garantia",
+              "sort": 50,
+              "is_editable": true,
+              "pipeline_id": 13495811,
+              "color": "#99ccff",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/106376664"
+                }
+              }
+            },
+            {
+              "id": 104850943,
+              "name": "Follow-Up",
+              "sort": 60,
+              "is_editable": true,
+              "pipeline_id": 13495811,
+              "color": "#99ccff",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/104850943"
+                }
+              }
+            },
+            {
+              "id": 104115779,
+              "name": "Orçamento Enviado",
+              "sort": 70,
+              "is_editable": true,
+              "pipeline_id": 13495811,
+              "color": "#ffcccc",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/104115779"
+                }
+              }
+            },
+            {
+              "id": 105398163,
+              "name": "Negociação/em aberto",
+              "sort": 80,
+              "is_editable": true,
+              "pipeline_id": 13495811,
+              "color": "#99ccff",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/105398163"
+                }
+              }
+            },
+            {
+              "id": 104521139,
+              "name": "Orçamento aprovado",
+              "sort": 90,
+              "is_editable": true,
+              "pipeline_id": 13495811,
+              "color": "#99ccff",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/104521139"
+                }
+              }
             },
             {
               "id": 104521143,
-              "name": "Etapa 9",
-              "sort": 90,
-              "color": "#E5173F",
+              "name": "Em manutenção",
+              "sort": 100,
+              "is_editable": true,
+              "pipeline_id": 13495811,
+              "color": "#99ccff",
               "type": 0,
-              "pipeline_id": 13495811
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/104521143"
+                }
+              }
             },
             {
               "id": 106376728,
-              "name": "Etapa 10",
-              "sort": 100,
-              "color": "#E5173F",
+              "name": "Enviado",
+              "sort": 110,
+              "is_editable": true,
+              "pipeline_id": 13495811,
+              "color": "#99ccff",
               "type": 0,
-              "pipeline_id": 13495811
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/106376728"
+                }
+              }
+            },
+            {
+              "id": 142,
+              "name": "Fechado - ganho",
+              "sort": 10000,
+              "is_editable": false,
+              "pipeline_id": 13495811,
+              "color": "#CCFF66",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/142"
+                }
+              }
+            },
+            {
+              "id": 143,
+              "name": "Fechado - perdido",
+              "sort": 11000,
+              "is_editable": false,
+              "pipeline_id": 13495811,
+              "color": "#D5D8DB",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13495811/statuses/143"
+                }
+              }
             }
           ]
         }
       },
       {
         "id": 13546711,
-        "name": "Pipeline 2",
-        "sort": 20,
+        "name": "Funil de Pós Venda",
+        "sort": 2,
         "is_main": false,
+        "is_unsorted_on": true,
         "is_archive": false,
+        "account_id": 36309147,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711"
+          }
+        },
         "_embedded": {
           "statuses": [
             {
-              "id": 142,
-              "name": "Ganho",
-              "sort": 9000,
-              "color": "#22c55e",
-              "type": 142,
-              "pipeline_id": 13546711
-            },
-            {
-              "id": 106489928,
-              "name": "Etapa 1",
+              "id": 104521175,
+              "name": "Etapa de leads de entrada",
               "sort": 10,
-              "color": "#E5173F",
-              "type": 0,
-              "pipeline_id": 13546711
-            },
-            {
-              "id": 143,
-              "name": "Perdido",
-              "sort": 9999,
-              "color": "#6b7280",
-              "type": 143,
-              "pipeline_id": 13546711
-            },
-            {
-              "id": 106488916,
-              "name": "Etapa 2",
-              "sort": 20,
-              "color": "#E5173F",
-              "type": 0,
-              "pipeline_id": 13546711
+              "is_editable": false,
+              "pipeline_id": 13546711,
+              "color": "#c1c1c1",
+              "type": 1,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/104521175"
+                }
+              }
             },
             {
               "id": 104521179,
-              "name": "Etapa 3",
-              "sort": 30,
-              "color": "#E5173F",
+              "name": "Aguardando validação",
+              "sort": 20,
+              "is_editable": true,
+              "pipeline_id": 13546711,
+              "color": "#99ccff",
               "type": 0,
-              "pipeline_id": 13546711
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/104521179"
+                }
+              }
             },
             {
-              "id": 106488920,
-              "name": "Etapa 4",
-              "sort": 40,
-              "color": "#E5173F",
+              "id": 106489928,
+              "name": "base",
+              "sort": 30,
+              "is_editable": true,
+              "pipeline_id": 13546711,
+              "color": "#99ccff",
               "type": 0,
-              "pipeline_id": 13546711
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/106489928"
+                }
+              }
+            },
+            {
+              "id": 106488916,
+              "name": "Entrou em contato novamente",
+              "sort": 40,
+              "is_editable": true,
+              "pipeline_id": 13546711,
+              "color": "#99ccff",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/106488916"
+                }
+              }
             },
             {
               "id": 106489580,
-              "name": "Etapa 5",
+              "name": "Garantia",
               "sort": 50,
-              "color": "#E5173F",
+              "is_editable": true,
+              "pipeline_id": 13546711,
+              "color": "#99ccff",
               "type": 0,
-              "pipeline_id": 13546711
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/106489580"
+                }
+              }
+            },
+            {
+              "id": 106488920,
+              "name": "Novo orçamento",
+              "sort": 60,
+              "is_editable": true,
+              "pipeline_id": 13546711,
+              "color": "#99ccff",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/106488920"
+                }
+              }
+            },
+            {
+              "id": 106488924,
+              "name": "Enviado",
+              "sort": 70,
+              "is_editable": true,
+              "pipeline_id": 13546711,
+              "color": "#99ccff",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/106488924"
+                }
+              }
+            },
+            {
+              "id": 106488928,
+              "name": "Nova Compra",
+              "sort": 80,
+              "is_editable": true,
+              "pipeline_id": 13546711,
+              "color": "#99ccff",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/106488928"
+                }
+              }
+            },
+            {
+              "id": 104521231,
+              "name": "Pesquisa Satisfação",
+              "sort": 90,
+              "is_editable": true,
+              "pipeline_id": 13546711,
+              "color": "#99ccff",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/104521231"
+                }
+              }
+            },
+            {
+              "id": 142,
+              "name": "Venda ganha",
+              "sort": 10000,
+              "is_editable": false,
+              "pipeline_id": 13546711,
+              "color": "#CCFF66",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/142"
+                }
+              }
+            },
+            {
+              "id": 143,
+              "name": "Venda perdida",
+              "sort": 11000,
+              "is_editable": false,
+              "pipeline_id": 13546711,
+              "color": "#D5D8DB",
+              "type": 0,
+              "account_id": 36309147,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/pipelines/13546711/statuses/143"
+                }
+              }
             }
           ]
         }
@@ -36306,9 +36528,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1786185308,
+      "created_at": 1786188594,
       "created_by": 0,
-      "updated_at": 1786185308,
+      "updated_at": 1786188594,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -36413,7 +36635,7 @@
         }
       }
     ],
-    "syntheticPipelines": true,
-    "lastSync": "2026-08-08T10:35:10.934Z"
+    "syntheticPipelines": false,
+    "lastSync": "2026-08-08T11:29:57.118Z"
   }
 }
