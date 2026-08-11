@@ -34386,59 +34386,6 @@
         }
       },
       {
-        "id": 78299239,
-        "name": "Clínica Médica Oftalmológica Blumenau Ltda",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 15073975,
-        "group_id": 0,
-        "status_id": 104521179,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 15073975,
-        "updated_by": 0,
-        "created_at": 1783704443,
-        "updated_at": 1786383401,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "OS 1198"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78299239?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 114483711,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114483711?page=3&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 74905000,
         "name": "HO LONDRINA - OFTALMOLOGIA LTDA",
         "price": 0,
@@ -34762,38 +34709,6 @@
               }
             }
           ]
-        }
-      },
-      {
-        "id": 76475178,
-        "name": "GERENCIA",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 15073975,
-        "group_id": 0,
-        "status_id": 104542347,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 15073975,
-        "updated_by": 15073975,
-        "created_at": 1778605035,
-        "updated_at": 1786389450,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76475178?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
         }
       },
       {
@@ -35405,31 +35320,53 @@
         }
       },
       {
-        "id": 78879357,
-        "name": "INSTITUTO DE OLHOS DE BELEM S/S LTDA",
-        "price": 10400,
-        "price_with_minor_units": 10400,
-        "responsible_user_id": 8029421,
+        "id": 78940929,
+        "name": "Lead #78940929",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
         "group_id": 0,
-        "status_id": 104115779,
+        "status_id": 104542347,
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
         "updated_by": 0,
-        "created_at": 1786132964,
-        "updated_at": 1786400105,
+        "created_at": 1786405304,
+        "updated_at": 1786405304,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
         "custom_fields_values": [
           {
-            "field_id": 3656414,
-            "field_name": "Observação",
+            "field_id": 3829714,
+            "field_name": "UTM SOURCE",
             "field_code": null,
             "field_type": "text",
             "values": [
               {
-                "value": "OS 2052"
+                "value": "facebook"
+              }
+            ]
+          },
+          {
+            "field_id": 3829718,
+            "field_name": "UTM CAMPAIGN",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "meio_funil_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3829716,
+            "field_name": "UTM MEDIUM",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "paid_social"
               }
             ]
           }
@@ -35439,7 +35376,39 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78879357?page=3&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78940929?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 75678214,
+        "name": "Recepção",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1777461572,
+        "updated_at": 1786447025,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75678214?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -35447,10 +35416,10 @@
           "loss_reason": [],
           "companies": [
             {
-              "id": 115248653,
+              "id": 110943894,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/115248653?page=3&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110943894?page=3&limit=250&with=loss_reason"
                 }
               }
             }
@@ -35470,7 +35439,7 @@
         "created_by": 0,
         "updated_by": 0,
         "created_at": 1785546848,
-        "updated_at": 1786402439,
+        "updated_at": 1786451959,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -35541,53 +35510,31 @@
         }
       },
       {
-        "id": 78940929,
-        "name": "Lead #78940929",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 15073975,
+        "id": 78879357,
+        "name": "INSTITUTO DE OLHOS DE BELEM S/S LTDA",
+        "price": 10400,
+        "price_with_minor_units": 10400,
+        "responsible_user_id": 8029421,
         "group_id": 0,
-        "status_id": 104542347,
+        "status_id": 104115779,
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1786405304,
-        "updated_at": 1786405304,
+        "updated_by": 15073975,
+        "created_at": 1786132964,
+        "updated_at": 1786452473,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
         "custom_fields_values": [
           {
-            "field_id": 3829714,
-            "field_name": "UTM SOURCE",
+            "field_id": 3656414,
+            "field_name": "Observação",
             "field_code": null,
             "field_type": "text",
             "values": [
               {
-                "value": "facebook"
-              }
-            ]
-          },
-          {
-            "field_id": 3829718,
-            "field_name": "UTM CAMPAIGN",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "meio_funil_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3829716,
-            "field_name": "UTM MEDIUM",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "paid_social"
+                "value": "OS 2052"
               }
             ]
           }
@@ -35597,70 +35544,18 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78940929?page=3&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78879357?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
           "tags": [],
           "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
-        "id": 78895571,
-        "name": "VISAO SUL OFTALMOLOGIA SERVICOS MEDICOS LTDA",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 106376664,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1786204643,
-        "updated_at": 1786416793,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656404,
-            "field_name": "Já é cliente",
-            "field_code": null,
-            "field_type": "select",
-            "values": [
-              {
-                "value": "Sim",
-                "enum_id": 735826244,
-                "enum_code": null
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78895571?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [
-            {
-              "id": 2117086,
-              "name": "cliente_base",
-              "color": null
-            }
-          ],
-          "loss_reason": [],
           "companies": [
             {
-              "id": 115248733,
+              "id": 115248653,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/115248733?page=3&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/115248653?page=3&limit=250&with=loss_reason"
                 }
               }
             }
@@ -35678,9 +35573,9 @@
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
+        "updated_by": 15073975,
         "created_at": 1774358582,
-        "updated_at": 1786445955,
+        "updated_at": 1786452990,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -35709,19 +35604,19 @@
         }
       },
       {
-        "id": 75678214,
-        "name": "Recepção",
+        "id": 77654917,
+        "name": "Enfermeira Dr. Fernando Prisma centro médico Vila Nova",
         "price": 0,
         "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
         "group_id": 0,
-        "status_id": 104115775,
+        "status_id": 106376664,
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1777461572,
-        "updated_at": 1786447025,
+        "updated_by": 15073975,
+        "created_at": 1781536968,
+        "updated_at": 1786453447,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -35731,7 +35626,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75678214?page=3&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77654917?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -35739,10 +35634,10 @@
           "loss_reason": [],
           "companies": [
             {
-              "id": 110943894,
+              "id": 113655993,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110943894?page=3&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113655993?page=3&limit=250&with=loss_reason"
                 }
               }
             }
@@ -35762,7 +35657,7 @@
         "created_by": 0,
         "updated_by": 0,
         "created_at": 1784732142,
-        "updated_at": 1786447043,
+        "updated_at": 1786453561,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -35826,8 +35721,8 @@
         }
       },
       {
-        "id": 77654917,
-        "name": "Enfermeira Dr. Fernando Prisma centro médico Vila Nova",
+        "id": 78895571,
+        "name": "VISAO SUL OFTALMOLOGIA SERVICOS MEDICOS LTDA",
         "price": 0,
         "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
@@ -35836,30 +35731,50 @@
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1781536968,
-        "updated_at": 1786447502,
+        "updated_by": 15073975,
+        "created_at": 1786204643,
+        "updated_at": 1786454012,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
-        "custom_fields_values": null,
+        "custom_fields_values": [
+          {
+            "field_id": 3656404,
+            "field_name": "Já é cliente",
+            "field_code": null,
+            "field_type": "select",
+            "values": [
+              {
+                "value": "Sim",
+                "enum_id": 735826244,
+                "enum_code": null
+              }
+            ]
+          }
+        ],
         "score": null,
         "account_id": 36309147,
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77654917?page=3&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78895571?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
-          "tags": [],
+          "tags": [
+            {
+              "id": 2117086,
+              "name": "cliente_base",
+              "color": null
+            }
+          ],
           "loss_reason": [],
           "companies": [
             {
-              "id": 113655993,
+              "id": 115248733,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113655993?page=3&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/115248733?page=3&limit=250&with=loss_reason"
                 }
               }
             }
@@ -35877,9 +35792,9 @@
         "pipeline_id": 13495811,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 0,
+        "updated_by": 15073975,
         "created_at": 1786131371,
-        "updated_at": 1786448620,
+        "updated_at": 1786454071,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -35890,6 +35805,134 @@
         "_links": {
           "self": {
             "href": "https://contatocyrculos.kommo.com/api/v4/leads/78878881?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78299239,
+        "name": "Clínica Médica Oftalmológica Blumenau Ltda",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 104521231,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 15073975,
+        "updated_by": 0,
+        "created_at": 1783704443,
+        "updated_at": 1786454649,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "OS 1198"
+              }
+            ]
+          },
+          {
+            "field_id": 3829608,
+            "field_name": "Nota",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "bom diia!"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78299239?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 114483711,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/114483711?page=3&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 76475178,
+        "name": "GERENCIA",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 104542347,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 15073975,
+        "updated_by": 15073975,
+        "created_at": 1778605035,
+        "updated_at": 1786456265,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/76475178?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 78951837,
+        "name": "Lead #78951837",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115767,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1786455388,
+        "updated_at": 1786456396,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/78951837?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -37221,9 +37264,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1786450178,
+      "created_at": 1786456465,
       "created_by": 0,
-      "updated_at": 1786450178,
+      "updated_at": 1786456465,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -37329,6 +37372,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-08-11T12:09:41.240Z"
+    "lastSync": "2026-08-11T13:54:28.866Z"
   }
 }
