@@ -28475,51 +28475,6 @@
         }
       },
       {
-        "id": 77691797,
-        "name": "Lead #77691797",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 143,
-        "pipeline_id": 13495811,
-        "loss_reason_id": 36927188,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1781628997,
-        "updated_at": 1785848120,
-        "closed_at": 1782311828,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77691797?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [
-            {
-              "id": 36927188,
-              "name": "Mensagens inadequadas",
-              "sort": 5,
-              "created_at": 1779296207,
-              "updated_at": 1779296207,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/loss_reasons/36927188?page=3&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ],
-          "companies": []
-        }
-      },
-      {
         "id": 78792913,
         "name": "Autolead: Lead #78299239",
         "price": 0,
@@ -36323,6 +36278,59 @@
         }
       },
       {
+        "id": 75336452,
+        "name": "FUNDACAO PEDRO AMERICO",
+        "price": 7400,
+        "price_with_minor_units": 7400,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 106488920,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 15073975,
+        "created_at": 1777038431,
+        "updated_at": 1786566798,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "OS 1966"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75336452?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 111186952,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111186952?page=3&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
         "id": 77937585,
         "name": "OCULARE OFTALMOLOGIA LTDA",
         "price": 8090,
@@ -36333,9 +36341,9 @@
         "pipeline_id": 13546711,
         "loss_reason_id": null,
         "created_by": 0,
-        "updated_by": 15073975,
+        "updated_by": 0,
         "created_at": 1782574601,
-        "updated_at": 1786566595,
+        "updated_at": 1786581564,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -36402,56 +36410,48 @@
         }
       },
       {
-        "id": 75336452,
-        "name": "FUNDACAO PEDRO AMERICO",
-        "price": 7400,
-        "price_with_minor_units": 7400,
+        "id": 77691797,
+        "name": "Lead #77691797",
+        "price": 0,
+        "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
         "group_id": 0,
-        "status_id": 106488920,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": 36927188,
         "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1777038431,
-        "updated_at": 1786566798,
-        "closed_at": null,
+        "updated_by": 0,
+        "created_at": 1781628997,
+        "updated_at": 1786581977,
+        "closed_at": 1782311828,
         "closest_task_at": null,
         "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "OS 1966"
-              }
-            ]
-          }
-        ],
+        "custom_fields_values": null,
         "score": null,
         "account_id": 36309147,
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/75336452?page=3&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77691797?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
           "tags": [],
-          "loss_reason": [],
-          "companies": [
+          "loss_reason": [
             {
-              "id": 111186952,
+              "id": 36927188,
+              "name": "Mensagens inadequadas",
+              "sort": 5,
+              "created_at": 1779296207,
+              "updated_at": 1779296207,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/111186952?page=3&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/loss_reasons/36927188?page=3&limit=250&with=loss_reason"
                 }
               }
             }
-          ]
+          ],
+          "companies": []
         }
       }
     ],
@@ -37777,9 +37777,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1786578142,
+      "created_at": 1786586807,
       "created_by": 0,
-      "updated_at": 1786578142,
+      "updated_at": 1786586807,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -37885,6 +37885,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-08-12T23:42:25.523Z"
+    "lastSync": "2026-08-13T02:06:50.573Z"
   }
 }
