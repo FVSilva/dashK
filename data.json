@@ -36495,59 +36495,6 @@
         }
       },
       {
-        "id": 77552337,
-        "name": "Copmed Centro De Olhos Dos Palmares E Medicos Ltda Me",
-        "price": 8090,
-        "price_with_minor_units": 8090,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104521179,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1781183319,
-        "updated_at": 1786651725,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "OS 1928"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77552337?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 113444211,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113444211?page=3&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 77923363,
         "name": "Stephen Torres",
         "price": 8090,
@@ -36663,13 +36610,13 @@
         "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
         "group_id": 0,
-        "status_id": 104521231,
+        "status_id": 106489928,
         "pipeline_id": 13546711,
         "loss_reason_id": null,
         "created_by": 0,
         "updated_by": 0,
         "created_at": 1784821029,
-        "updated_at": 1786653612,
+        "updated_at": 1786654615,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -36723,6 +36670,17 @@
                 "enum_code": null
               }
             ]
+          },
+          {
+            "field_id": 3829608,
+            "field_name": "Nota",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "10"
+              }
+            ]
           }
         ],
         "score": null,
@@ -36742,6 +36700,59 @@
               "_links": {
                 "self": {
                   "href": "https://contatocyrculos.kommo.com/api/v4/companies/115092155?page=3&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 77552337,
+        "name": "Copmed Centro De Olhos Dos Palmares E Medicos Ltda Me",
+        "price": 8090,
+        "price_with_minor_units": 8090,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104521179,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1781183319,
+        "updated_at": 1786656537,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "OS 1928"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77552337?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 113444211,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/113444211?page=3&limit=250&with=loss_reason"
                 }
               }
             }
@@ -38071,9 +38082,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1786653903,
+      "created_at": 1786657655,
       "created_by": 0,
-      "updated_at": 1786653903,
+      "updated_at": 1786657655,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -38179,6 +38190,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-08-13T20:45:06.963Z"
+    "lastSync": "2026-08-13T21:47:38.556Z"
   }
 }
