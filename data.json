@@ -39224,38 +39224,6 @@
         }
       },
       {
-        "id": 79145333,
-        "name": "Lead #79145333",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115775,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1787203944,
-        "updated_at": 1787595962,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/79145333?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": []
-        }
-      },
-      {
         "id": 78727533,
         "name": "Antonio Pinheiro Barbosa Neto",
         "price": 80400,
@@ -40087,6 +40055,38 @@
         "_links": {
           "self": {
             "href": "https://contatocyrculos.kommo.com/api/v4/leads/79235663?page=3&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": []
+        }
+      },
+      {
+        "id": 79145333,
+        "name": "Lead #79145333",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115775,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1787203944,
+        "updated_at": 1787618225,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/79145333?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -41470,9 +41470,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1787615249,
+      "created_at": 1787620830,
       "created_by": 0,
-      "updated_at": 1787615249,
+      "updated_at": 1787620830,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -41578,6 +41578,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-08-24T23:47:31.655Z"
+    "lastSync": "2026-08-25T01:20:32.662Z"
   }
 }
