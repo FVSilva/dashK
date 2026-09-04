@@ -39939,51 +39939,6 @@
         }
       },
       {
-        "id": 77691797,
-        "name": "Lead #77691797",
-        "price": 0,
-        "price_with_minor_units": 0,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 143,
-        "pipeline_id": 13495811,
-        "loss_reason_id": 36927188,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1781628997,
-        "updated_at": 1788354462,
-        "closed_at": 1782311828,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77691797?page=3&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [
-            {
-              "id": 36927188,
-              "name": "Mensagens inadequadas",
-              "sort": 5,
-              "created_at": 1779296207,
-              "updated_at": 1779296207,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/loss_reasons/36927188?page=3&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ],
-          "companies": []
-        }
-      },
-      {
         "id": 76808099,
         "name": "CALIBRAMED COMERCIO E METROLOGIA EM EQUIPAMENTOS LTDA",
         "price": 0,
@@ -40685,7 +40640,7 @@
         "labor_cost": null,
         "_links": {
           "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/79392453?page=4&limit=250&with=loss_reason"
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/79392453?page=3&limit=250&with=loss_reason"
           }
         },
         "_embedded": {
@@ -40702,7 +40657,7 @@
               "id": 115814343,
               "_links": {
                 "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/115814343?page=4&limit=250&with=loss_reason"
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/115814343?page=3&limit=250&with=loss_reason"
                 }
               }
             }
@@ -42289,6 +42244,51 @@
           "loss_reason": [],
           "companies": []
         }
+      },
+      {
+        "id": 77691797,
+        "name": "Lead #77691797",
+        "price": 0,
+        "price_with_minor_units": 0,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 143,
+        "pipeline_id": 13495811,
+        "loss_reason_id": 36927188,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1781628997,
+        "updated_at": 1788484630,
+        "closed_at": 1782311828,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/77691797?page=4&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [
+            {
+              "id": 36927188,
+              "name": "Mensagens inadequadas",
+              "sort": 5,
+              "created_at": 1779296207,
+              "updated_at": 1779296207,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/leads/loss_reasons/36927188?page=4&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ],
+          "companies": []
+        }
       }
     ],
     "users": [
@@ -42473,7 +42473,7 @@
           "statuses": [
             {
               "id": 104115763,
-              "name": "Etapa de leads de entrada",
+              "name": "Leads de entrada",
               "sort": 10,
               "is_editable": false,
               "pipeline_id": 13495811,
@@ -43665,9 +43665,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1788484405,
+      "created_at": 1788502845,
       "created_by": 0,
-      "updated_at": 1788484405,
+      "updated_at": 1788502845,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -43773,6 +43773,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-09-04T01:13:25.642Z"
+    "lastSync": "2026-09-04T06:20:48.139Z"
   }
 }
