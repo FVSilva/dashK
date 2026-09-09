@@ -43020,47 +43020,6 @@
         }
       },
       {
-        "id": 74928034,
-        "name": "Andrea Kuner",
-        "price": 15000,
-        "price_with_minor_units": 15000,
-        "responsible_user_id": 8029421,
-        "group_id": 0,
-        "status_id": 104115779,
-        "pipeline_id": 13495811,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 15073975,
-        "created_at": 1776351188,
-        "updated_at": 1788985617,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": null,
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74928034?page=4&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 110911572,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110911572?page=4&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 79243723,
         "name": "OFTSUL SOLUCOES TECNICAS LTDA.",
         "price": 16800,
@@ -43524,13 +43483,13 @@
         "price_with_minor_units": 0,
         "responsible_user_id": 8029421,
         "group_id": 0,
-        "status_id": 104521231,
+        "status_id": 106489928,
         "pipeline_id": 13546711,
         "loss_reason_id": null,
         "created_by": 0,
         "updated_by": 0,
         "created_at": 1785874427,
-        "updated_at": 1788987169,
+        "updated_at": 1788989759,
         "closed_at": null,
         "closest_task_at": null,
         "is_deleted": false,
@@ -43571,6 +43530,17 @@
                 "value": "Posso te mandar uma foto delas?"
               }
             ]
+          },
+          {
+            "field_id": 3829608,
+            "field_name": "Nota",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "10"
+              }
+            ]
           }
         ],
         "score": null,
@@ -43596,6 +43566,47 @@
               "_links": {
                 "self": {
                   "href": "https://contatocyrculos.kommo.com/api/v4/companies/115131075?page=4&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 74928034,
+        "name": "Andrea Kuner",
+        "price": 15000,
+        "price_with_minor_units": 15000,
+        "responsible_user_id": 8029421,
+        "group_id": 0,
+        "status_id": 104115779,
+        "pipeline_id": 13495811,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1776351188,
+        "updated_at": 1788992307,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": null,
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/74928034?page=4&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 110911572,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/110911572?page=4&limit=250&with=loss_reason"
                 }
               }
             }
@@ -44977,9 +44988,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1788987898,
+      "created_at": 1788996403,
       "created_by": 0,
-      "updated_at": 1788987898,
+      "updated_at": 1788996403,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -45085,6 +45096,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-09-09T21:05:01.414Z"
+    "lastSync": "2026-09-09T23:26:46.302Z"
   }
 }
