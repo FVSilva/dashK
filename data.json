@@ -44096,125 +44096,6 @@
         }
       },
       {
-        "id": 79260803,
-        "name": "HOSPITAL DE OLHOS DE GUARAPUAVA",
-        "price": 7000,
-        "price_with_minor_units": 7000,
-        "responsible_user_id": 15073975,
-        "group_id": 0,
-        "status_id": 104521231,
-        "pipeline_id": 13546711,
-        "loss_reason_id": null,
-        "created_by": 0,
-        "updated_by": 0,
-        "created_at": 1787661729,
-        "updated_at": 1789735828,
-        "closed_at": null,
-        "closest_task_at": null,
-        "is_deleted": false,
-        "custom_fields_values": [
-          {
-            "field_id": 3656410,
-            "field_name": "Nome lead",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "Lillian"
-              }
-            ]
-          },
-          {
-            "field_id": 3829714,
-            "field_name": "UTM SOURCE",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "google"
-              }
-            ]
-          },
-          {
-            "field_id": 3829716,
-            "field_name": "UTM MEDIUM",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "cpc"
-              }
-            ]
-          },
-          {
-            "field_id": 3829718,
-            "field_name": "UTM CAMPAIGN",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "search_v4"
-              }
-            ]
-          },
-          {
-            "field_id": 3838285,
-            "field_name": "Clinica ou hospital",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "Hospital de Olhos de Guarapuava"
-              }
-            ]
-          },
-          {
-            "field_id": 3838287,
-            "field_name": "Modelo Caneta",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "2,Caneta de Faco (Infinity)"
-              }
-            ]
-          },
-          {
-            "field_id": 3656414,
-            "field_name": "Observação",
-            "field_code": null,
-            "field_type": "text",
-            "values": [
-              {
-                "value": "OS 2096"
-              }
-            ]
-          }
-        ],
-        "score": null,
-        "account_id": 36309147,
-        "labor_cost": null,
-        "_links": {
-          "self": {
-            "href": "https://contatocyrculos.kommo.com/api/v4/leads/79260803?page=4&limit=250&with=loss_reason"
-          }
-        },
-        "_embedded": {
-          "tags": [],
-          "loss_reason": [],
-          "companies": [
-            {
-              "id": 115790379,
-              "_links": {
-                "self": {
-                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/115790379?page=4&limit=250&with=loss_reason"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
         "id": 79911911,
         "name": "Lead #79911911",
         "price": 0,
@@ -45866,6 +45747,125 @@
           "loss_reason": [],
           "companies": []
         }
+      },
+      {
+        "id": 79260803,
+        "name": "HOSPITAL DE OLHOS DE GUARAPUAVA",
+        "price": 7000,
+        "price_with_minor_units": 7000,
+        "responsible_user_id": 15073975,
+        "group_id": 0,
+        "status_id": 106489928,
+        "pipeline_id": 13546711,
+        "loss_reason_id": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": 1787661729,
+        "updated_at": 1789908629,
+        "closed_at": null,
+        "closest_task_at": null,
+        "is_deleted": false,
+        "custom_fields_values": [
+          {
+            "field_id": 3656410,
+            "field_name": "Nome lead",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "Lillian"
+              }
+            ]
+          },
+          {
+            "field_id": 3829714,
+            "field_name": "UTM SOURCE",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "google"
+              }
+            ]
+          },
+          {
+            "field_id": 3829716,
+            "field_name": "UTM MEDIUM",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "cpc"
+              }
+            ]
+          },
+          {
+            "field_id": 3829718,
+            "field_name": "UTM CAMPAIGN",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "search_v4"
+              }
+            ]
+          },
+          {
+            "field_id": 3838285,
+            "field_name": "Clinica ou hospital",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "Hospital de Olhos de Guarapuava"
+              }
+            ]
+          },
+          {
+            "field_id": 3838287,
+            "field_name": "Modelo Caneta",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "2,Caneta de Faco (Infinity)"
+              }
+            ]
+          },
+          {
+            "field_id": 3656414,
+            "field_name": "Observação",
+            "field_code": null,
+            "field_type": "text",
+            "values": [
+              {
+                "value": "OS 2096"
+              }
+            ]
+          }
+        ],
+        "score": null,
+        "account_id": 36309147,
+        "labor_cost": null,
+        "_links": {
+          "self": {
+            "href": "https://contatocyrculos.kommo.com/api/v4/leads/79260803?page=4&limit=250&with=loss_reason"
+          }
+        },
+        "_embedded": {
+          "tags": [],
+          "loss_reason": [],
+          "companies": [
+            {
+              "id": 115790379,
+              "_links": {
+                "self": {
+                  "href": "https://contatocyrculos.kommo.com/api/v4/companies/115790379?page=4&limit=250&with=loss_reason"
+                }
+              }
+            }
+          ]
+        }
       }
     ],
     "users": [
@@ -47242,9 +47242,9 @@
       "name": "contatocyrculos",
       "subdomain": "contatocyrculos",
       "language": "pt",
-      "created_at": 1789898347,
+      "created_at": 1789913185,
       "created_by": 0,
-      "updated_at": 1789898347,
+      "updated_at": 1789913185,
       "updated_by": 0,
       "current_user_id": 15073975,
       "country": "BR",
@@ -47350,6 +47350,6 @@
       }
     ],
     "syntheticPipelines": false,
-    "lastSync": "2026-09-20T09:59:10.352Z"
+    "lastSync": "2026-09-20T14:06:28.536Z"
   }
 }
